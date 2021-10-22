@@ -35,6 +35,7 @@ namespace WanganGarageManager
             Localisation.InitEditor();
             CarDB.InitDB();
             lblCredit.Text = "Wangan Garage Manager\nVersion " + Application.ProductVersion.Split('.')[0];
+            cmbVer.SelectedIndex = 0;
             Localisation.UpdateMain(this, CultureInfo.InstalledUICulture.Name);
             menuSwitcher_SelectedIndexChanged(null, null);
         }
@@ -61,9 +62,12 @@ namespace WanganGarageManager
                         {
                             GarageCar car = new GarageCar(file);
                             car.LoadCar();
-                            lstGarage.Items.Add(car.GetListViewItem(carPreviews));
-                            cars.Add(car);
-                            lblNoCars.Visible = false;
+                            if (GameVersion.versions.ContainsKey(car.ver) && cmbVer.SelectedIndex == GameVersion.versions[car.ver])
+                            {
+                                lstGarage.Items.Add(car.GetListViewItem(carPreviews));
+                                cars.Add(car);
+                                lblNoCars.Visible = false;
+                            }
                         }
                     }
                     if (Directory.Exists("Teknoparrot_Cars"))
@@ -72,9 +76,12 @@ namespace WanganGarageManager
                         {
                             GarageCar car = new GarageCar(file);
                             car.LoadCar();
-                            lstGarage.Items.Add(car.GetListViewItem(carPreviews));
-                            cars.Add(car);
-                            lblNoCars.Visible = false;
+                            if (GameVersion.versions.ContainsKey(car.ver) && cmbVer.SelectedIndex == GameVersion.versions[car.ver])
+                            {
+                                lstGarage.Items.Add(car.GetListViewItem(carPreviews));
+                                cars.Add(car);
+                                lblNoCars.Visible = false;
+                            }
                         }
                     }
                     if (Directory.Exists("sv"))
@@ -83,9 +90,12 @@ namespace WanganGarageManager
                         {
                             GarageCar car = new GarageCar(file);
                             car.LoadCar();
-                            lstGarage.Items.Add(car.GetListViewItem(carPreviews));
-                            cars.Add(car);
-                            lblNoCars.Visible = false;
+                            if (GameVersion.versions.ContainsKey(car.ver) && cmbVer.SelectedIndex == GameVersion.versions[car.ver])
+                            {
+                                lstGarage.Items.Add(car.GetListViewItem(carPreviews));
+                                cars.Add(car);
+                                lblNoCars.Visible = false;
+                            }
                         }
                     }
                     break;
@@ -213,7 +223,12 @@ namespace WanganGarageManager
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://forms.gle/gfvfYvTHxcEUyruj8");
+            Process.Start("https://github.com/derole1/WanganGarageManager");
+        }
+
+        private void cmbVer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            menuSwitcher_SelectedIndexChanged(null, null);
         }
     }
 }

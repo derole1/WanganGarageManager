@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuSwitcher = new System.Windows.Forms.TabControl();
             this.tabGarage = new System.Windows.Forms.TabPage();
+            this.cmbVer = new System.Windows.Forms.ComboBox();
             this.btnSettings = new System.Windows.Forms.Button();
             this.lblWip = new System.Windows.Forms.Label();
             this.lblNoCars = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.clmPowerHandling = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmFileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuAddCar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDeleteCar = new System.Windows.Forms.ToolStripMenuItem();
             this.carPreviews = new System.Windows.Forms.ImageList(this.components);
             this.lblSelectCar = new System.Windows.Forms.Label();
@@ -55,7 +57,6 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.lstSettingsBorder = new System.Windows.Forms.ListView();
             this.lblSettings = new System.Windows.Forms.Label();
-            this.menuAddCar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSwitcher.SuspendLayout();
             this.tabGarage.SuspendLayout();
             this.lstContextMenu.SuspendLayout();
@@ -80,6 +81,7 @@
             // tabGarage
             // 
             this.tabGarage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tabGarage.Controls.Add(this.cmbVer);
             this.tabGarage.Controls.Add(this.btnSettings);
             this.tabGarage.Controls.Add(this.lblWip);
             this.tabGarage.Controls.Add(this.lblNoCars);
@@ -94,6 +96,23 @@
             this.tabGarage.TabIndex = 0;
             this.tabGarage.Text = "Garage";
             this.tabGarage.Click += new System.EventHandler(this.tabGarage_Click);
+            // 
+            // cmbVer
+            // 
+            this.cmbVer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVer.FormattingEnabled = true;
+            this.cmbVer.Items.AddRange(new object[] {
+            "WANGAN MIDNIGHT MAXIMUM TUNE 5",
+            "WANGAN MIDNIGHT MAXIMUM TUNE 5DX",
+            "WANGAN MIDNIGHT MAXIMUM TUNE 5DX+",
+            "WANGAN MIDNIGHT MAXIMUM TUNE 6",
+            "WANGAN MIDNIGHT MAXIMUM TUNE 6R"});
+            this.cmbVer.Location = new System.Drawing.Point(273, 10);
+            this.cmbVer.Name = "cmbVer";
+            this.cmbVer.Size = new System.Drawing.Size(240, 21);
+            this.cmbVer.TabIndex = 1;
+            this.cmbVer.Visible = false;
+            this.cmbVer.SelectedIndexChanged += new System.EventHandler(this.cmbVer_SelectedIndexChanged);
             // 
             // btnSettings
             // 
@@ -114,7 +133,7 @@
             this.lblWip.Name = "lblWip";
             this.lblWip.Size = new System.Drawing.Size(606, 14);
             this.lblWip.TabIndex = 3;
-            this.lblWip.Text = "Public beta";
+            this.lblWip.Text = "Work in progress build";
             this.lblWip.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblNoCars
@@ -138,9 +157,9 @@
             this.lblCredit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCredit.ForeColor = System.Drawing.Color.DimGray;
-            this.lblCredit.Location = new System.Drawing.Point(271, 7);
+            this.lblCredit.Location = new System.Drawing.Point(519, 7);
             this.lblCredit.Name = "lblCredit";
-            this.lblCredit.Size = new System.Drawing.Size(531, 26);
+            this.lblCredit.Size = new System.Drawing.Size(283, 26);
             this.lblCredit.TabIndex = 1;
             this.lblCredit.Text = "Wangan Garage Manager\r\nVersion -";
             this.lblCredit.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -204,13 +223,19 @@
             this.menuAddCar,
             this.menuDeleteCar});
             this.lstContextMenu.Name = "lstContextMenu";
-            this.lstContextMenu.Size = new System.Drawing.Size(181, 70);
+            this.lstContextMenu.Size = new System.Drawing.Size(140, 48);
             this.lstContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.lstContextMenu_Opening);
+            // 
+            // menuAddCar
+            // 
+            this.menuAddCar.Name = "menuAddCar";
+            this.menuAddCar.Size = new System.Drawing.Size(139, 22);
+            this.menuAddCar.Text = "Delete car(s)";
             // 
             // menuDeleteCar
             // 
             this.menuDeleteCar.Name = "menuDeleteCar";
-            this.menuDeleteCar.Size = new System.Drawing.Size(180, 22);
+            this.menuDeleteCar.Size = new System.Drawing.Size(139, 22);
             this.menuDeleteCar.Text = "Add car(s)";
             this.menuDeleteCar.Click += new System.EventHandler(this.menuDeleteCar_Click);
             // 
@@ -333,10 +358,10 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Location = new System.Drawing.Point(-1, 438);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(108, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(109, 13);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Leave your feedback";
+            this.linkLabel1.Text = "Contribute on GitHub!";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // tabSettings
@@ -461,12 +486,6 @@
             this.lblSettings.TabIndex = 4;
             this.lblSettings.Text = "Settings";
             // 
-            // menuAddCar
-            // 
-            this.menuAddCar.Name = "menuAddCar";
-            this.menuAddCar.Size = new System.Drawing.Size(180, 22);
-            this.menuAddCar.Text = "Delete car(s)";
-            // 
             // frmMain
             // 
             this.AllowDrop = true;
@@ -541,6 +560,7 @@ bool s = true;
         public System.Windows.Forms.CheckBox chkPowerHandling;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.ToolStripMenuItem menuAddCar;
+        private System.Windows.Forms.ComboBox cmbVer;
     }
 }
 

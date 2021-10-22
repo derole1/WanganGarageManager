@@ -19,6 +19,8 @@ namespace WanganGarageManager
         public bool isLoaded = false;
         public bool confirmedDiscard = false;
 
+        public ushort ver;
+
         public byte rearWing;
         public byte sideMirrors;
         public byte bodySticker;
@@ -53,6 +55,8 @@ namespace WanganGarageManager
         public void LoadCar()
         {
             data = File.ReadAllBytes(filename);
+
+            ver = BitConverter.ToUInt16(data, 0x00);
 
             numberPlatePrefecture = data[0x20];
             car = data[0x2C];
