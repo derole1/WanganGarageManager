@@ -20,7 +20,7 @@ namespace WanganGarageManager
         {
             if (!Debugger.IsAttached)
             {
-                if (MessageBox.Show("An error has occurred and the application must close. Would you like to save a log file?", "Wangan Garage Manager has crashed", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+                if (MessageBox.Show("エラーが発生したため、アプリケーションを終了する必要があります。ログファイルを保存しますか？", "Wangan Garage Managerがクラッシュしました。", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
                 {
                     File.WriteAllText("errorlog_" + DateTime.UtcNow.ToString("ddMMyyyy-HHmmss") + ".log", e.ExceptionObject.ToString());
                 }

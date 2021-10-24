@@ -77,7 +77,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameVersion.cs" />
     <Compile Include="GarageCar.cs" />
     <Compile Include="Localisation.cs" />
     <Compile Include="Program.cs" />

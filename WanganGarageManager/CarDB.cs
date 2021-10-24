@@ -425,21 +425,23 @@ new Color[] {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Col
             db.Add(0x6F, "Dodge Viper");
             db.Add(0x70, "Dodge Charger");
             db.Add(0x71, "CRASH (Wheelless GTR)");
-            db.Add(0x72, "Mazda Miata (Big wheels)");
-            db.Add(0x73, "DUMMY");
-            db.Add(0x74, "DUMMY");
-            db.Add(0x75, "DUMMY");
-            db.Add(0x76, "DUMMY");
-            db.Add(0x77, "DUMMY");
-            db.Add(0x78, "DUMMY");
-            db.Add(0x79, "DUMMY");
-            db.Add(0x7A, "DUMMY");
-            db.Add(0x7B, "DUMMY");
-            db.Add(0x7C, "DUMMY");
-            db.Add(0x7D, "DUMMY");
-            db.Add(0x7E, "DUMMY");
-            db.Add(0x7F, "DUMMY");
-            db.Add(0x80, "DUMMY");
+            db.Add(0x73, "BMW 2002 TURBO");
+            db.Add(0x72, "BMW M6 Gran Coupe");
+            db.Add(0x74, "MAZDA ROADSTER ND");
+            db.Add(0x75, "NISSAN LAUREL 25 CLUB－S");
+            db.Add(0x79, "TOYOTA MARKII TOURER V");
+            db.Add(0x7A, "BMW MINI Cooper S Crossover");
+            db.Add(0x80, "HONDA NSX");
+            db.Add(0x81, "HONDA NSX-R");
+            db.Add(0x7F, "HONDA New NSX");
+            db.Add(0x83, "HONDA S2000");
+            db.Add(0x82, "HONDA S660");
+            db.Add(0x7B, "Lamborghini Aventador LP700-4");
+            db.Add(0x7C, "Lamborghini Countach LP400");
+            db.Add(0x7E, "Lamborghini Diablo VT");
+            db.Add(0x7D, "Lamborghini Miura P400S");
+            db.Add(0x85, "NISSAN SILVIA K's");
+            db.Add(0x76, "Nissan GTR35 NISMO");
         }
 
         public static string GetCarName(byte id)
