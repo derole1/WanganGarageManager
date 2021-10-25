@@ -350,7 +350,7 @@ new Color[] {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Col
             db.Add(0x24, "Nissan 300ZX (Z32)");
             db.Add(0x25, "Nissan 300ZX (Z31)");
             db.Add(0x26, "DUMMY");
-            db.Add(0x27, "Nissan Fairlady Z S20");
+            db.Add(0x27, "Nissan Fairlady Z S30");
             db.Add(0x28, "Nissan Silvia S15");
             db.Add(0x29, "Nissan 180SX");
             db.Add(0x2A, "Nissan Skyline 370GT");
