@@ -211,7 +211,7 @@
             // 
             this.menuDeleteCar.Name = "menuDeleteCar";
             this.menuDeleteCar.Size = new System.Drawing.Size(180, 22);
-            this.menuDeleteCar.Text = "Add car(s)";
+            this.menuDeleteCar.Text = "Delete car(s)";
             this.menuDeleteCar.Click += new System.EventHandler(this.menuDeleteCar_Click);
             // 
             // carPreviews
@@ -374,10 +374,10 @@
             this.cmbGarageView.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGarageView.FormattingEnabled = true;
             this.cmbGarageView.Items.AddRange(new object[] {
-            "Standard",
-            "Tiled",
-            "Detailed",
-            "Compact"});
+            "デフォルト",
+            "タイル",
+            "詳細",
+            "シンプル"});
             this.cmbGarageView.Location = new System.Drawing.Point(25, 70);
             this.cmbGarageView.Name = "cmbGarageView";
             this.cmbGarageView.Size = new System.Drawing.Size(275, 21);
@@ -465,7 +465,7 @@
             // 
             this.menuAddCar.Name = "menuAddCar";
             this.menuAddCar.Size = new System.Drawing.Size(180, 22);
-            this.menuAddCar.Text = "Delete car(s)";
+            this.menuAddCar.Text = "Add car(s)";
             // 
             // frmMain
             // 
