@@ -29,7 +29,6 @@ namespace WanganGarageManager
             PlateFrame = 8,
             Neons = 9,
             Tuning = 10,
-            LicensePlate = 11,
         }
 
         GarageCar car;
@@ -155,21 +154,14 @@ namespace WanganGarageManager
 
         private void cmbPrefecture_SelectedIndexChanged(object sender, EventArgs e)
         {
-            car.UpdatePlatePrefecture(cmbPrefecture.SelectedIndex);
         }
 
         private void txtNum1_TextChanged(object sender, EventArgs e)
         {
-            int selStart = txtNum1.SelectionStart;
-            txtNum1.Text = Regex.Replace(txtNum1.Text, "[^0-9]", "");
-            txtNum1.SelectionStart = selStart;
         }
 
         private void txtNum2_TextChanged(object sender, EventArgs e)
         {
-            int selStart = txtNum2.SelectionStart;
-            txtNum2.Text = Regex.Replace(txtNum2.Text, "[^0-9]", "");
-            txtNum2.SelectionStart = selStart;
         }
 
         ushort ParseLicensePlate(string num1, string num2)
@@ -179,14 +171,10 @@ namespace WanganGarageManager
 
         private void txtNum1_Leave(object sender, EventArgs e)
         {
-            txtNum1.Text = txtNum1.Text.PadLeft(2, '0');
-            car.UpdatePlate(ParseLicensePlate(txtNum1.Text, txtNum2.Text));
         }
 
         private void txtNum2_Leave(object sender, EventArgs e)
         {
-            txtNum2.Text = txtNum2.Text.PadLeft(2, '0');
-            car.UpdatePlate(ParseLicensePlate(txtNum1.Text, txtNum2.Text));
         }
 
         private void trkPower_Scroll(object sender, EventArgs e)

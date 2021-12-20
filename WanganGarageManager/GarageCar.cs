@@ -69,7 +69,7 @@ namespace WanganGarageManager
             rearWing = data[0x58];
             sideMirrors = data[0x5C];
             bodySticker = data[0x60];
-            japanSticker = 0x0;
+            japanSticker = data[0x60];
             stickerColour = data[0x64];
 
             carbonTrunk = data[0x94];
@@ -110,7 +110,7 @@ namespace WanganGarageManager
             data[0x58] = rearWing;
             data[0x5C] = sideMirrors;
             data[0x60] = bodySticker;
-            //japanSticker;
+            data[0x60] = japanSticker;
             data[0x64] = stickerColour;
 
             data[0x94] = carbonTrunk;
@@ -325,10 +325,7 @@ namespace WanganGarageManager
             editor.trkHandling.Value = handling;
 
             string number = numberPlateNumber.ToString().PadLeft(4, '0');
-            editor.txtNum1.Text = new string(number.Take(2).ToArray());
-            editor.txtNum2.Text = new string(number.Skip(2).ToArray());
 
-            editor.cmbPrefecture.SelectedIndex = numberPlatePrefecture;
 
             Application.DoEvents();
             hasSaved = true;

@@ -42,6 +42,7 @@
             this.clmPowerHandling = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmFileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuAddCar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDeleteCar = new System.Windows.Forms.ToolStripMenuItem();
             this.carPreviews = new System.Windows.Forms.ImageList(this.components);
             this.lblSelectCar = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.lstSettingsBorder = new System.Windows.Forms.ListView();
             this.lblSettings = new System.Windows.Forms.Label();
-            this.menuAddCar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSwitcher.SuspendLayout();
             this.tabGarage.SuspendLayout();
             this.lstContextMenu.SuspendLayout();
@@ -70,10 +70,10 @@
             this.menuSwitcher.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.menuSwitcher.Controls.Add(this.tabGarage);
             this.menuSwitcher.Controls.Add(this.tabSettings);
-            this.menuSwitcher.Location = new System.Drawing.Point(-4, -25);
+            this.menuSwitcher.Location = new System.Drawing.Point(-4, -23);
             this.menuSwitcher.Name = "menuSwitcher";
             this.menuSwitcher.SelectedIndex = 0;
-            this.menuSwitcher.Size = new System.Drawing.Size(822, 480);
+            this.menuSwitcher.Size = new System.Drawing.Size(822, 443);
             this.menuSwitcher.TabIndex = 0;
             this.menuSwitcher.SelectedIndexChanged += new System.EventHandler(this.menuSwitcher_SelectedIndexChanged);
             // 
@@ -90,7 +90,7 @@
             this.tabGarage.Controls.Add(this.linkLabel1);
             this.tabGarage.Location = new System.Drawing.Point(4, 25);
             this.tabGarage.Name = "tabGarage";
-            this.tabGarage.Size = new System.Drawing.Size(814, 451);
+            this.tabGarage.Size = new System.Drawing.Size(814, 414);
             this.tabGarage.TabIndex = 0;
             this.tabGarage.Text = "Garage";
             this.tabGarage.Click += new System.EventHandler(this.tabGarage_Click);
@@ -98,9 +98,9 @@
             // btnSettings
             // 
             this.btnSettings.ForeColor = System.Drawing.Color.Black;
-            this.btnSettings.Location = new System.Drawing.Point(93, 8);
+            this.btnSettings.Location = new System.Drawing.Point(93, 7);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(75, 23);
+            this.btnSettings.Size = new System.Drawing.Size(75, 21);
             this.btnSettings.TabIndex = 4;
             this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = true;
@@ -110,9 +110,9 @@
             // 
             this.lblWip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWip.ForeColor = System.Drawing.Color.DimGray;
-            this.lblWip.Location = new System.Drawing.Point(211, 439);
+            this.lblWip.Location = new System.Drawing.Point(211, 405);
             this.lblWip.Name = "lblWip";
-            this.lblWip.Size = new System.Drawing.Size(606, 14);
+            this.lblWip.Size = new System.Drawing.Size(606, 13);
             this.lblWip.TabIndex = 3;
             this.lblWip.Text = "Public beta";
             this.lblWip.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -125,9 +125,9 @@
             this.lblNoCars.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.lblNoCars.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoCars.ForeColor = System.Drawing.Color.DimGray;
-            this.lblNoCars.Location = new System.Drawing.Point(13, 38);
+            this.lblNoCars.Location = new System.Drawing.Point(13, 35);
             this.lblNoCars.Name = "lblNoCars";
-            this.lblNoCars.Size = new System.Drawing.Size(788, 400);
+            this.lblNoCars.Size = new System.Drawing.Size(788, 369);
             this.lblNoCars.TabIndex = 1;
             this.lblNoCars.Text = "No cars have been created.\r\nPerform a race in a car of your choice for it to show" +
     " up here.";
@@ -138,9 +138,9 @@
             this.lblCredit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCredit.ForeColor = System.Drawing.Color.DimGray;
-            this.lblCredit.Location = new System.Drawing.Point(271, 7);
+            this.lblCredit.Location = new System.Drawing.Point(622, 6);
             this.lblCredit.Name = "lblCredit";
-            this.lblCredit.Size = new System.Drawing.Size(531, 26);
+            this.lblCredit.Size = new System.Drawing.Size(180, 24);
             this.lblCredit.TabIndex = 1;
             this.lblCredit.Text = "Wangan Garage Manager\r\nVersion -";
             this.lblCredit.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -148,9 +148,9 @@
             // btnGarageExit
             // 
             this.btnGarageExit.ForeColor = System.Drawing.Color.Black;
-            this.btnGarageExit.Location = new System.Drawing.Point(12, 8);
+            this.btnGarageExit.Location = new System.Drawing.Point(12, 7);
             this.btnGarageExit.Name = "btnGarageExit";
-            this.btnGarageExit.Size = new System.Drawing.Size(75, 23);
+            this.btnGarageExit.Size = new System.Drawing.Size(75, 21);
             this.btnGarageExit.TabIndex = 2;
             this.btnGarageExit.Text = "Exit";
             this.btnGarageExit.UseVisualStyleBackColor = true;
@@ -173,9 +173,9 @@
             this.lstGarage.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lstGarage.HideSelection = false;
             this.lstGarage.LargeImageList = this.carPreviews;
-            this.lstGarage.Location = new System.Drawing.Point(12, 37);
+            this.lstGarage.Location = new System.Drawing.Point(12, 34);
             this.lstGarage.Name = "lstGarage";
-            this.lstGarage.Size = new System.Drawing.Size(790, 402);
+            this.lstGarage.Size = new System.Drawing.Size(790, 371);
             this.lstGarage.SmallImageList = this.carPreviews;
             this.lstGarage.TabIndex = 1;
             this.lstGarage.UseCompatibleStateImageBehavior = false;
@@ -204,13 +204,19 @@
             this.menuAddCar,
             this.menuDeleteCar});
             this.lstContextMenu.Name = "lstContextMenu";
-            this.lstContextMenu.Size = new System.Drawing.Size(181, 70);
+            this.lstContextMenu.Size = new System.Drawing.Size(140, 48);
             this.lstContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.lstContextMenu_Opening);
+            // 
+            // menuAddCar
+            // 
+            this.menuAddCar.Name = "menuAddCar";
+            this.menuAddCar.Size = new System.Drawing.Size(139, 22);
+            this.menuAddCar.Text = "Add car(s)";
             // 
             // menuDeleteCar
             // 
             this.menuDeleteCar.Name = "menuDeleteCar";
-            this.menuDeleteCar.Size = new System.Drawing.Size(180, 22);
+            this.menuDeleteCar.Size = new System.Drawing.Size(139, 22);
             this.menuDeleteCar.Text = "Delete car(s)";
             this.menuDeleteCar.Click += new System.EventHandler(this.menuDeleteCar_Click);
             // 
@@ -331,9 +337,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(-1, 438);
+            this.linkLabel1.Location = new System.Drawing.Point(-1, 404);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(108, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(111, 12);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Leave your feedback";
@@ -352,7 +358,7 @@
             this.tabSettings.Controls.Add(this.lblSettings);
             this.tabSettings.Location = new System.Drawing.Point(4, 25);
             this.tabSettings.Name = "tabSettings";
-            this.tabSettings.Size = new System.Drawing.Size(814, 451);
+            this.tabSettings.Size = new System.Drawing.Size(814, 414);
             this.tabSettings.TabIndex = 1;
             this.tabSettings.Text = "tabSettings";
             // 
@@ -361,7 +367,7 @@
             this.chkPowerHandling.AutoSize = true;
             this.chkPowerHandling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.chkPowerHandling.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.chkPowerHandling.Location = new System.Drawing.Point(25, 97);
+            this.chkPowerHandling.Location = new System.Drawing.Point(25, 90);
             this.chkPowerHandling.Name = "chkPowerHandling";
             this.chkPowerHandling.Size = new System.Drawing.Size(267, 25);
             this.chkPowerHandling.TabIndex = 12;
@@ -378,9 +384,9 @@
             "タイル",
             "詳細",
             "シンプル"});
-            this.cmbGarageView.Location = new System.Drawing.Point(25, 70);
+            this.cmbGarageView.Location = new System.Drawing.Point(25, 65);
             this.cmbGarageView.Name = "cmbGarageView";
-            this.cmbGarageView.Size = new System.Drawing.Size(275, 21);
+            this.cmbGarageView.Size = new System.Drawing.Size(275, 20);
             this.cmbGarageView.TabIndex = 11;
             this.cmbGarageView.SelectedIndexChanged += new System.EventHandler(this.cmbGarageView_SelectedIndexChanged);
             // 
@@ -389,7 +395,7 @@
             this.lblGarageView.AutoSize = true;
             this.lblGarageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.lblGarageView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGarageView.Location = new System.Drawing.Point(21, 46);
+            this.lblGarageView.Location = new System.Drawing.Point(21, 42);
             this.lblGarageView.Name = "lblGarageView";
             this.lblGarageView.Size = new System.Drawing.Size(133, 21);
             this.lblGarageView.TabIndex = 10;
@@ -400,9 +406,9 @@
             // 
             this.lblSettingsWip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSettingsWip.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSettingsWip.Location = new System.Drawing.Point(211, 439);
+            this.lblSettingsWip.Location = new System.Drawing.Point(211, 405);
             this.lblSettingsWip.Name = "lblSettingsWip";
-            this.lblSettingsWip.Size = new System.Drawing.Size(606, 14);
+            this.lblSettingsWip.Size = new System.Drawing.Size(606, 13);
             this.lblSettingsWip.TabIndex = 9;
             this.lblSettingsWip.Text = "Work in progress build, do not distribute!";
             this.lblSettingsWip.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -415,18 +421,18 @@
             this.lblSettingsBG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.lblSettingsBG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSettingsBG.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSettingsBG.Location = new System.Drawing.Point(13, 38);
+            this.lblSettingsBG.Location = new System.Drawing.Point(13, 35);
             this.lblSettingsBG.Name = "lblSettingsBG";
-            this.lblSettingsBG.Size = new System.Drawing.Size(788, 400);
+            this.lblSettingsBG.Size = new System.Drawing.Size(788, 369);
             this.lblSettingsBG.TabIndex = 5;
             this.lblSettingsBG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnBack
             // 
             this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(12, 8);
+            this.btnBack.Location = new System.Drawing.Point(12, 7);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.Size = new System.Drawing.Size(75, 21);
             this.btnBack.TabIndex = 8;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -443,9 +449,9 @@
             this.lstSettingsBorder.FullRowSelect = true;
             this.lstSettingsBorder.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lstSettingsBorder.HideSelection = false;
-            this.lstSettingsBorder.Location = new System.Drawing.Point(12, 37);
+            this.lstSettingsBorder.Location = new System.Drawing.Point(12, 34);
             this.lstSettingsBorder.Name = "lstSettingsBorder";
-            this.lstSettingsBorder.Size = new System.Drawing.Size(790, 402);
+            this.lstSettingsBorder.Size = new System.Drawing.Size(790, 371);
             this.lstSettingsBorder.TabIndex = 7;
             this.lstSettingsBorder.UseCompatibleStateImageBehavior = false;
             this.lstSettingsBorder.View = System.Windows.Forms.View.List;
@@ -461,23 +467,17 @@
             this.lblSettings.TabIndex = 4;
             this.lblSettings.Text = "Settings";
             // 
-            // menuAddCar
-            // 
-            this.menuAddCar.Name = "menuAddCar";
-            this.menuAddCar.Size = new System.Drawing.Size(180, 22);
-            this.menuAddCar.Text = "Add car(s)";
-            // 
             // frmMain
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(814, 451);
+            this.ClientSize = new System.Drawing.Size(814, 416);
             this.Controls.Add(this.menuSwitcher);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(640, 480);
+            this.MinimumSize = new System.Drawing.Size(640, 446);
             this.Name = "frmMain";
             this.Text = "Wangan Garage Manager";
             this.Load += new System.EventHandler(this.frmMain_Load);
