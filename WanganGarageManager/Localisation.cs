@@ -20,7 +20,7 @@ namespace WanganGarageManager
             string[] english = new string[] { "Select car", "Exit", "Settings", "No cars have been created.\nPerform a race in a car of your choice for it to show up here.", "Settings", "Back", "Garage view type:", "Use Power/Handling instead of HP" };
             languageTableMain.Add("en-US", english);
             //languageTableMain.Add("en-GB", english);
-            string[] japanese = new string[] { "車を選択してください", "終了", "設定", "車は作成されていません。\n車は作成されていません。", "設定", "戻る", "表示方法：", "馬力表記の代わりにHP表記を使用する" };
+            string[] japanese = new string[] { "車を選択してください", "終了", "設定", "車は作成されていません。\nゲームで車を作成してください。", "設定", "戻る", "表示方法：", "馬力表記の代わりにHP表記を使用する" };
             languageTableMain.Add("ja-JP", japanese);
         }
 

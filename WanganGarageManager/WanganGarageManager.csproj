@@ -120,14 +120,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\aero_s00_03.jpg" />
-    <None Include="Resources\aero_s00_04.jpg" />
-    <None Include="Resources\aero_s00_05.jpg" />
-    <None Include="Resources\aero_s00_06.jpg" />
-    <None Include="Resources\aero_s00_07.jpg" />
-    <None Include="Resources\aero_s00_00.jpg" />
-    <None Include="Resources\aero_s00_01.jpg" />
-    <None Include="Resources\aero_s00_02.jpg" />
     <Content Include="wgmlogo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

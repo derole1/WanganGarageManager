@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ToolStripMenuItem menuAddCar;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuSwitcher = new System.Windows.Forms.TabControl();
             this.tabGarage = new System.Windows.Forms.TabPage();
             this.btnSettings = new System.Windows.Forms.Button();
-            this.lblWip = new System.Windows.Forms.Label();
             this.lblNoCars = new System.Windows.Forms.Label();
             this.lblCredit = new System.Windows.Forms.Label();
             this.btnGarageExit = new System.Windows.Forms.Button();
@@ -42,7 +42,6 @@
             this.clmPowerHandling = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmFileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.menuAddCar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDeleteCar = new System.Windows.Forms.ToolStripMenuItem();
             this.carPreviews = new System.Windows.Forms.ImageList(this.components);
             this.lblSelectCar = new System.Windows.Forms.Label();
@@ -56,11 +55,21 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.lstSettingsBorder = new System.Windows.Forms.ListView();
             this.lblSettings = new System.Windows.Forms.Label();
+            menuAddCar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSwitcher.SuspendLayout();
             this.tabGarage.SuspendLayout();
             this.lstContextMenu.SuspendLayout();
             this.tabSettings.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // menuAddCar
+            // 
+            menuAddCar.Enabled = false;
+            menuAddCar.Name = "menuAddCar";
+            menuAddCar.ShowShortcutKeys = false;
+            menuAddCar.Size = new System.Drawing.Size(180, 22);
+            menuAddCar.Text = "Add car(s)";
+            menuAddCar.Visible = false;
             // 
             // menuSwitcher
             // 
@@ -81,7 +90,6 @@
             // 
             this.tabGarage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tabGarage.Controls.Add(this.btnSettings);
-            this.tabGarage.Controls.Add(this.lblWip);
             this.tabGarage.Controls.Add(this.lblNoCars);
             this.tabGarage.Controls.Add(this.lblCredit);
             this.tabGarage.Controls.Add(this.btnGarageExit);
@@ -106,17 +114,6 @@
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // lblWip
-            // 
-            this.lblWip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblWip.ForeColor = System.Drawing.Color.DimGray;
-            this.lblWip.Location = new System.Drawing.Point(211, 405);
-            this.lblWip.Name = "lblWip";
-            this.lblWip.Size = new System.Drawing.Size(606, 13);
-            this.lblWip.TabIndex = 3;
-            this.lblWip.Text = "Public beta";
-            this.lblWip.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // lblNoCars
             // 
             this.lblNoCars.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -125,9 +122,9 @@
             this.lblNoCars.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.lblNoCars.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoCars.ForeColor = System.Drawing.Color.DimGray;
-            this.lblNoCars.Location = new System.Drawing.Point(13, 35);
+            this.lblNoCars.Location = new System.Drawing.Point(12, 35);
             this.lblNoCars.Name = "lblNoCars";
-            this.lblNoCars.Size = new System.Drawing.Size(788, 369);
+            this.lblNoCars.Size = new System.Drawing.Size(789, 369);
             this.lblNoCars.TabIndex = 1;
             this.lblNoCars.Text = "No cars have been created.\r\nPerform a race in a car of your choice for it to show" +
     " up here.";
@@ -201,22 +198,16 @@
             // lstContextMenu
             // 
             this.lstContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuAddCar,
+            menuAddCar,
             this.menuDeleteCar});
             this.lstContextMenu.Name = "lstContextMenu";
-            this.lstContextMenu.Size = new System.Drawing.Size(140, 48);
+            this.lstContextMenu.Size = new System.Drawing.Size(181, 70);
             this.lstContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.lstContextMenu_Opening);
-            // 
-            // menuAddCar
-            // 
-            this.menuAddCar.Name = "menuAddCar";
-            this.menuAddCar.Size = new System.Drawing.Size(139, 22);
-            this.menuAddCar.Text = "Add car(s)";
             // 
             // menuDeleteCar
             // 
             this.menuDeleteCar.Name = "menuDeleteCar";
-            this.menuDeleteCar.Size = new System.Drawing.Size(139, 22);
+            this.menuDeleteCar.Size = new System.Drawing.Size(180, 22);
             this.menuDeleteCar.Text = "Delete car(s)";
             this.menuDeleteCar.Click += new System.EventHandler(this.menuDeleteCar_Click);
             // 
@@ -320,8 +311,24 @@
             this.carPreviews.Images.SetKeyName(93, "69.png");
             this.carPreviews.Images.SetKeyName(94, "70.png");
             this.carPreviews.Images.SetKeyName(95, "72.png");
-            this.carPreviews.Images.SetKeyName(96, "DAMMY.png");
-            this.carPreviews.Images.SetKeyName(97, "FF.png");
+            this.carPreviews.Images.SetKeyName(96, "FF.png");
+            this.carPreviews.Images.SetKeyName(97, "69.png");
+            this.carPreviews.Images.SetKeyName(98, "76.png");
+            this.carPreviews.Images.SetKeyName(99, "7B.png");
+            this.carPreviews.Images.SetKeyName(100, "72.png");
+            this.carPreviews.Images.SetKeyName(101, "7C.png");
+            this.carPreviews.Images.SetKeyName(102, "6A.png");
+            this.carPreviews.Images.SetKeyName(103, "7F.png");
+            this.carPreviews.Images.SetKeyName(104, "7E.png");
+            this.carPreviews.Images.SetKeyName(105, "82.png");
+            this.carPreviews.Images.SetKeyName(106, "70.png");
+            this.carPreviews.Images.SetKeyName(107, "73.png");
+            this.carPreviews.Images.SetKeyName(108, "6B.png");
+            this.carPreviews.Images.SetKeyName(109, "6C.png");
+            this.carPreviews.Images.SetKeyName(110, "6D.png");
+            this.carPreviews.Images.SetKeyName(111, "6E.png");
+            this.carPreviews.Images.SetKeyName(112, "6F.png");
+            this.carPreviews.Images.SetKeyName(113, "75.png");
             // 
             // lblSelectCar
             // 
@@ -526,7 +533,6 @@ bool s = true;
         private System.Windows.Forms.ImageList carPreviews;
         private System.Windows.Forms.Label lblCredit;
         public System.Windows.Forms.Label lblNoCars;
-        private System.Windows.Forms.Label lblWip;
         private System.Windows.Forms.ContextMenuStrip lstContextMenu;
         private System.Windows.Forms.ToolStripMenuItem menuDeleteCar;
         private System.Windows.Forms.TabPage tabSettings;
@@ -540,7 +546,6 @@ bool s = true;
         public System.Windows.Forms.Label lblGarageView;
         public System.Windows.Forms.CheckBox chkPowerHandling;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.ToolStripMenuItem menuAddCar;
     }
 }
 
