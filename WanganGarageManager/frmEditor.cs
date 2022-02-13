@@ -223,7 +223,7 @@ namespace WanganGarageManager
             }
             else
             {
-                lblHP.Text = "HP: " + CarDB.power[trkPower.Value];
+                lblHP.Text = CarDB.power[trkPower.Value];
             }
         }
 
@@ -302,6 +302,16 @@ namespace WanganGarageManager
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://forms.gle/gfvfYvTHxcEUyruj8");
+        }
+
+        private void lblHP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

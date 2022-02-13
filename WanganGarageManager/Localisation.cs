@@ -26,11 +26,10 @@ namespace WanganGarageManager
 
         public static void InitEditor()
         {
-            string[] english = new string[] { "Car editor", "Back", "Save", "Aero", "Wing", "Rims", "Stickers", "Colour", "Trunk", "Mirrors", "Hood", "Neons", "Plate Frame", "Tuning", "", "Power", "Handling", "Tuning stage", "Change colour" };
+            string[] english = new string[] { "Car editor", "Back", "Save", "Aero", "Wing", "Rims", "Stickers", "Colour", "Trunk", "Mirrors", "Hood", "Neons", "Plate Frame", "Tuning", "", "Power", "Handling", "Tuning stage", "Change colour", "Level" };
             languageTableEditor.Add("en-US", english);
             //languageTableEditor.Add("en-GB", english);
-            string[] japanese = new string[] { "カーエディタ", "戻る", "セーブ", "エアロ", "ウイング", "ホイール", "ステッカー", "カラー", "トランク", "ミラー", "ボンネット", "ネオン", "プレートフレーム", "チューニング", "", "パワー", "ハンドリング", "チューニングステージ"
-                , "カラー選択" };
+            string[] japanese = new string[] { "カーエディタ", "戻る", "セーブ", "エアロ", "ウイング", "ホイール", "ステッカー", "カラー", "トランク", "ミラー", "ボンネット", "ネオン", "プレートフレーム", "チューニング", "", "パワー", "ハンドリング", "チューニングステージ", "カラー選択", "階級" };
             languageTableEditor.Add("ja-JP", japanese);
         }
 

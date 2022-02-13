@@ -34,7 +34,7 @@ namespace WanganGarageManager
             Localisation.InitMain();
             Localisation.InitEditor();
             CarDB.InitDB();
-            lblCredit.Text = "Wangan Garage Manager\nVersion " + Application.ProductVersion.Split('.')[0];
+            lblCredit.Text = "Wangan Garage Manager5DX Plus\nVersion 0.9";
             Localisation.UpdateMain(this, CultureInfo.InstalledUICulture.Name);
             menuSwitcher_SelectedIndexChanged(null, null);
         }
@@ -214,6 +214,21 @@ namespace WanganGarageManager
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://forms.gle/gfvfYvTHxcEUyruj8");
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCredit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
