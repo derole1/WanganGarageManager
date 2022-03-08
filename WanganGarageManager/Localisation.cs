@@ -26,10 +26,10 @@ namespace WanganGarageManager
 
         public static void InitEditor()
         {
-            string[] english = new string[] { "Car editor", "Back", "Save", "Aero", "Wing", "Rims", "Stickers", "Colour", "Trunk", "Mirrors", "Hood", "Neons", "Plate Frame", "Tuning", "", "Power", "Handling", "Tuning stage", "Change colour", "Level" };
+            string[] english = new string[] { "Car editor", "Back", "Save", "Aero", "Wing", "Rims", "Stickers", "Colour", "Trunk", "Mirrors", "Hood", "Neons", "Plate Frame", "Tuning", "License Plate", "Power", "Handling", "Tuning stage", "Change colour" };
             languageTableEditor.Add("en-US", english);
             //languageTableEditor.Add("en-GB", english);
-            string[] japanese = new string[] { "カーエディタ", "戻る", "セーブ", "エアロ", "ウイング", "ホイール", "ステッカー", "カラー", "トランク", "ミラー", "ボンネット", "ネオン", "プレートフレーム", "チューニング", "", "パワー", "ハンドリング", "チューニングステージ", "カラー選択", "階級" };
+            string[] japanese = new string[] { "カーエディタ", "戻る", "セーブ", "エアロ", "ウイング", "ホイール", "ステッカー", "カラー", "トランク", "ミラー", "ボンネット", "ネオン", "プレートフレーム", "チューニング", "ナンバープレート", "パワー", "ハンドリング", "チューニングステージ", "デフォルトカラー選択" };
             languageTableEditor.Add("ja-JP", japanese);
         }
 
@@ -73,6 +73,7 @@ namespace WanganGarageManager
             frm.tabNeons.Text = texts[11];
             frm.tabPlateFrame.Text = texts[12];
             frm.tabTuning.Text = texts[13];
+            frm.tabLicensePlate.Text = texts[14];
             frm.lblPower.Text = texts[15];
             frm.lblHandling.Text = texts[16];
             frm.lblTuningStage.Text = texts[17];

@@ -29,220 +29,220 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("装着しない");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("エアロパーツA", 0);
-            System.Windows.Forms.ListViewItem listViewItem74 = new System.Windows.Forms.ListViewItem("エアロパーツB", 1);
-            System.Windows.Forms.ListViewItem listViewItem75 = new System.Windows.Forms.ListViewItem("エアロパーツC", 2);
-            System.Windows.Forms.ListViewItem listViewItem76 = new System.Windows.Forms.ListViewItem("エアロパーツD", 3);
-            System.Windows.Forms.ListViewItem listViewItem77 = new System.Windows.Forms.ListViewItem("エアロパーツE", 4);
-            System.Windows.Forms.ListViewItem listViewItem78 = new System.Windows.Forms.ListViewItem("エアロパーツF", 5);
-            System.Windows.Forms.ListViewItem listViewItem79 = new System.Windows.Forms.ListViewItem("エアロパーツG", 6);
-            System.Windows.Forms.ListViewItem listViewItem80 = new System.Windows.Forms.ListViewItem("エアロパーツH", 7);
+            System.Windows.Forms.ListViewItem listViewItem140 = new System.Windows.Forms.ListViewItem("装着しない");
+            System.Windows.Forms.ListViewItem listViewItem141 = new System.Windows.Forms.ListViewItem("エアロパーツA", 0);
+            System.Windows.Forms.ListViewItem listViewItem142 = new System.Windows.Forms.ListViewItem("エアロパーツB", 1);
+            System.Windows.Forms.ListViewItem listViewItem143 = new System.Windows.Forms.ListViewItem("エアロパーツC", 2);
+            System.Windows.Forms.ListViewItem listViewItem144 = new System.Windows.Forms.ListViewItem("エアロパーツD", 3);
+            System.Windows.Forms.ListViewItem listViewItem145 = new System.Windows.Forms.ListViewItem("エアロパーツE", 4);
+            System.Windows.Forms.ListViewItem listViewItem146 = new System.Windows.Forms.ListViewItem("エアロパーツF", 5);
+            System.Windows.Forms.ListViewItem listViewItem147 = new System.Windows.Forms.ListViewItem("エアロパーツG", 6);
+            System.Windows.Forms.ListViewItem listViewItem148 = new System.Windows.Forms.ListViewItem("エアロパーツH", 7);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditor));
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("デフォルト");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("装着しない", 0);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("ストレートGTウィング", 1);
-            System.Windows.Forms.ListViewItem listViewItem81 = new System.Windows.Forms.ListViewItem("3DGTウィング1", 2);
-            System.Windows.Forms.ListViewItem listViewItem82 = new System.Windows.Forms.ListViewItem("専用ウィングA", 3);
-            System.Windows.Forms.ListViewItem listViewItem83 = new System.Windows.Forms.ListViewItem("ツインGTウィング", 4);
-            System.Windows.Forms.ListViewItem listViewItem84 = new System.Windows.Forms.ListViewItem("3DGTウィング2", 5);
-            System.Windows.Forms.ListViewItem listViewItem85 = new System.Windows.Forms.ListViewItem("専用ウィングB", 6);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("デフォルト");
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Enkei Racing NT03+M", 0);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Enkei Racing WRC Tarmac Evo Forged", 1);
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Enkei Racing JS+M", 2);
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("Enkei Racing RPF1", 3);
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("Enkei Racing RS+M", 4);
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("Enkei Sport RC-T4", 5);
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Enkei Racing RP05", 6);
-            System.Windows.Forms.ListViewItem listViewItem86 = new System.Windows.Forms.ListViewItem("Enkei Performance Line PF02", 7);
-            System.Windows.Forms.ListViewItem listViewItem87 = new System.Windows.Forms.ListViewItem("Enkei Racing GTC01", 8);
-            System.Windows.Forms.ListViewItem listViewItem88 = new System.Windows.Forms.ListViewItem("Enkei Racing RS05", 9);
-            System.Windows.Forms.ListViewItem listViewItem89 = new System.Windows.Forms.ListViewItem("Enkei Racing GTC01RR", 10);
-            System.Windows.Forms.ListViewItem listViewItem90 = new System.Windows.Forms.ListViewItem("Enkei Sport ES-Tarmac", 11);
-            System.Windows.Forms.ListViewItem listViewItem136 = new System.Windows.Forms.ListViewItem("Tecno Motor Works TMW LM16", 12);
-            System.Windows.Forms.ListViewItem listViewItem137 = new System.Windows.Forms.ListViewItem("Enkei 92", 13);
-            System.Windows.Forms.ListViewItem listViewItem138 = new System.Windows.Forms.ListViewItem("Enkei 5Spoke", 14);
-            System.Windows.Forms.ListViewItem listViewItem139 = new System.Windows.Forms.ListViewItem("Enkei Tuning SC03 Ver. MMB", 15);
-            System.Windows.Forms.ListViewItem listViewItem140 = new System.Windows.Forms.ListViewItem("Rays VR TE37", 16);
-            System.Windows.Forms.ListViewItem listViewItem141 = new System.Windows.Forms.ListViewItem("Rays VRCE28N", 17);
-            System.Windows.Forms.ListViewItem listViewItem142 = new System.Windows.Forms.ListViewItem("Rays VR GT-TypeM", 18);
-            System.Windows.Forms.ListViewItem listViewItem143 = new System.Windows.Forms.ListViewItem("Rays Gram Lights 57F", 19);
-            System.Windows.Forms.ListViewItem listViewItem144 = new System.Windows.Forms.ListViewItem("Rays X401", 20);
-            System.Windows.Forms.ListViewItem listViewItem145 = new System.Windows.Forms.ListViewItem("Rays GABBANA", 21);
-            System.Windows.Forms.ListViewItem listViewItem146 = new System.Windows.Forms.ListViewItem("RAYS VR GT-TypeC", 22);
-            System.Windows.Forms.ListViewItem listViewItem147 = new System.Windows.Forms.ListViewItem("Rays BL-10-SX", 23);
-            System.Windows.Forms.ListViewItem listViewItem148 = new System.Windows.Forms.ListViewItem("Rays Shotgun", 24);
-            System.Windows.Forms.ListViewItem listViewItem149 = new System.Windows.Forms.ListViewItem("Rays VR RE30", 25);
-            System.Windows.Forms.ListViewItem listViewItem150 = new System.Windows.Forms.ListViewItem("Rays G-Games 77NTL", 26);
-            System.Windows.Forms.ListViewItem listViewItem151 = new System.Windows.Forms.ListViewItem("Rays VR.G10", 27);
-            System.Windows.Forms.ListViewItem listViewItem152 = new System.Windows.Forms.ListViewItem("Rays SPR-EX", 28);
-            System.Windows.Forms.ListViewItem listViewItem153 = new System.Windows.Forms.ListViewItem("Rays GramLights 57 Accelerate", 29);
-            System.Windows.Forms.ListViewItem listViewItem202 = new System.Windows.Forms.ListViewItem("Rays Gram Lights 57D", 30);
-            System.Windows.Forms.ListViewItem listViewItem203 = new System.Windows.Forms.ListViewItem("Rays Black Fleet F2B", 31);
-            System.Windows.Forms.ListViewItem listViewItem204 = new System.Windows.Forms.ListViewItem("Rays Stratagia Amarena", 32);
-            System.Windows.Forms.ListViewItem listViewItem205 = new System.Windows.Forms.ListViewItem("Rays VR C345 PRIME", 33);
-            System.Windows.Forms.ListViewItem listViewItem206 = new System.Windows.Forms.ListViewItem("Rays Black Fleet V350", 34);
-            System.Windows.Forms.ListViewItem listViewItem207 = new System.Windows.Forms.ListViewItem("Rays Homura 2X8GT", 35);
-            System.Windows.Forms.ListViewItem listViewItem208 = new System.Windows.Forms.ListViewItem("Rays Stratage Arpione", 36);
-            System.Windows.Forms.ListViewItem listViewItem209 = new System.Windows.Forms.ListViewItem("Rays GramLights 57 FXX", 37);
-            System.Windows.Forms.ListViewItem listViewItem210 = new System.Windows.Forms.ListViewItem("Rays Scudo", 38);
-            System.Windows.Forms.ListViewItem listViewItem211 = new System.Windows.Forms.ListViewItem("Rays GTU", 39);
-            System.Windows.Forms.ListViewItem listViewItem212 = new System.Windows.Forms.ListViewItem("Yokohama Super ADVAN Racing Version 2", 40);
-            System.Windows.Forms.ListViewItem listViewItem213 = new System.Windows.Forms.ListViewItem("Yokohama AVS Model T5", 41);
-            System.Windows.Forms.ListViewItem listViewItem214 = new System.Windows.Forms.ListViewItem("Yokohama AVS Model T6", 42);
-            System.Windows.Forms.ListViewItem listViewItem215 = new System.Windows.Forms.ListViewItem("Yokohama Model T7", 43);
-            System.Windows.Forms.ListViewItem listViewItem216 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing TCII", 44);
-            System.Windows.Forms.ListViewItem listViewItem217 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RS", 45);
-            System.Windows.Forms.ListViewItem listViewItem218 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RCII", 46);
-            System.Windows.Forms.ListViewItem listViewItem219 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RGII", 47);
-            System.Windows.Forms.ListViewItem listViewItem259 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RS-D", 48);
-            System.Windows.Forms.ListViewItem listViewItem260 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RCIII", 49);
-            System.Windows.Forms.ListViewItem listViewItem261 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RZ", 50);
-            System.Windows.Forms.ListViewItem listViewItem262 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RG-D", 51);
-            System.Windows.Forms.ListViewItem listViewItem263 = new System.Windows.Forms.ListViewItem("Yokohama AVS Model F15", 52);
-            System.Windows.Forms.ListViewItem listViewItem264 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing GT", 53);
-            System.Windows.Forms.ListViewItem listViewItem265 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RZ-DF", 54);
-            System.Windows.Forms.ListViewItem listViewItem266 = new System.Windows.Forms.ListViewItem("Yokohama KREUTZER Series VI", 55);
-            System.Windows.Forms.ListViewItem listViewItem267 = new System.Windows.Forms.ListViewItem("Watanabe Eight Spoke", 56);
-            System.Windows.Forms.ListViewItem listViewItem268 = new System.Windows.Forms.ListViewItem("Watanabe Cyclone", 57);
-            System.Windows.Forms.ListViewItem listViewItem269 = new System.Windows.Forms.ListViewItem("Watanabe Stellar", 58);
-            System.Windows.Forms.ListViewItem listViewItem270 = new System.Windows.Forms.ListViewItem("Watanabe GR-8", 59);
-            System.Windows.Forms.ListViewItem listViewItem271 = new System.Windows.Forms.ListViewItem("Watanabe NEW RS8", 60);
-            System.Windows.Forms.ListViewItem listViewItem272 = new System.Windows.Forms.ListViewItem("OZ Formula-HLT", 61);
-            System.Windows.Forms.ListViewItem listViewItem273 = new System.Windows.Forms.ListViewItem("OZ Botticelli-3", 62);
-            System.Windows.Forms.ListViewItem listViewItem274 = new System.Windows.Forms.ListViewItem("OZ Torino", 63);
-            System.Windows.Forms.ListViewItem listViewItem275 = new System.Windows.Forms.ListViewItem("OZ Legend", 64);
-            System.Windows.Forms.ListViewItem listViewItem276 = new System.Windows.Forms.ListViewItem("OZ Ultraleggera", 65);
-            System.Windows.Forms.ListViewItem listViewItem277 = new System.Windows.Forms.ListViewItem("OZ Versilia", 66);
-            System.Windows.Forms.ListViewItem listViewItem278 = new System.Windows.Forms.ListViewItem("OZ Superturismo-LM", 67);
-            System.Windows.Forms.ListViewItem listViewItem279 = new System.Windows.Forms.ListViewItem("OZ Italia 150", 68);
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("装着しない");
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("Racing Stripe 1", 0);
-            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("Fire Pattern 1", 1);
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("Racing Stripe 2", 3);
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("Fire Pattern 2", 4);
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("Pac-Man", 6);
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("Namco", 7);
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("Works Colour", 8);
-            System.Windows.Forms.ListViewItem listViewItem91 = new System.Windows.Forms.ListViewItem("Racing Stripe 3", 9);
-            System.Windows.Forms.ListViewItem listViewItem92 = new System.Windows.Forms.ListViewItem("Fire Pattern 3", 10);
-            System.Windows.Forms.ListViewItem listViewItem93 = new System.Windows.Forms.ListViewItem("Tribal 1", 12);
-            System.Windows.Forms.ListViewItem listViewItem94 = new System.Windows.Forms.ListViewItem("Camo 1", 13);
-            System.Windows.Forms.ListViewItem listViewItem95 = new System.Windows.Forms.ListViewItem("One Point 1", 15);
-            System.Windows.Forms.ListViewItem listViewItem96 = new System.Windows.Forms.ListViewItem("Fire Pattern 4", 16);
-            System.Windows.Forms.ListViewItem listViewItem97 = new System.Windows.Forms.ListViewItem("Japonism 1", 18);
-            System.Windows.Forms.ListViewItem listViewItem98 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem149 = new System.Windows.Forms.ListViewItem("デフォルト");
+            System.Windows.Forms.ListViewItem listViewItem150 = new System.Windows.Forms.ListViewItem("装着しない", 0);
+            System.Windows.Forms.ListViewItem listViewItem151 = new System.Windows.Forms.ListViewItem("ストレートGTウィング", 1);
+            System.Windows.Forms.ListViewItem listViewItem152 = new System.Windows.Forms.ListViewItem("3DGTウィング1", 2);
+            System.Windows.Forms.ListViewItem listViewItem153 = new System.Windows.Forms.ListViewItem("車種別ウィングA", 3);
+            System.Windows.Forms.ListViewItem listViewItem154 = new System.Windows.Forms.ListViewItem("ツインGTウィング", 4);
+            System.Windows.Forms.ListViewItem listViewItem155 = new System.Windows.Forms.ListViewItem("3DGTウィング2", 5);
+            System.Windows.Forms.ListViewItem listViewItem156 = new System.Windows.Forms.ListViewItem("車種別ウィングB", 6);
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("デフォルト");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Enkei Racing NT03+M", 0);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Enkei Racing WRC Tarmac Evo Forged", 1);
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Enkei Racing JS+M", 2);
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Enkei Racing RPF1", 3);
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Enkei Racing RS+M", 4);
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Enkei Sport RC-T4", 5);
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Enkei Racing RP05", 6);
+            System.Windows.Forms.ListViewItem listViewItem157 = new System.Windows.Forms.ListViewItem("Enkei Performance Line PF02", 7);
+            System.Windows.Forms.ListViewItem listViewItem158 = new System.Windows.Forms.ListViewItem("Enkei Racing GTC01", 8);
+            System.Windows.Forms.ListViewItem listViewItem159 = new System.Windows.Forms.ListViewItem("Enkei Racing RS05", 9);
+            System.Windows.Forms.ListViewItem listViewItem160 = new System.Windows.Forms.ListViewItem("Enkei Racing GTC01RR", 10);
+            System.Windows.Forms.ListViewItem listViewItem161 = new System.Windows.Forms.ListViewItem("Enkei Sport ES-Tarmac", 11);
+            System.Windows.Forms.ListViewItem listViewItem162 = new System.Windows.Forms.ListViewItem("Tecno Motor Works TMW LM16", 12);
+            System.Windows.Forms.ListViewItem listViewItem163 = new System.Windows.Forms.ListViewItem("Enkei 92", 13);
+            System.Windows.Forms.ListViewItem listViewItem164 = new System.Windows.Forms.ListViewItem("Enkei 5Spoke", 14);
+            System.Windows.Forms.ListViewItem listViewItem165 = new System.Windows.Forms.ListViewItem("Enkei Tuning SC03 Ver. MMB", 15);
+            System.Windows.Forms.ListViewItem listViewItem166 = new System.Windows.Forms.ListViewItem("Rays VR TE37", 16);
+            System.Windows.Forms.ListViewItem listViewItem167 = new System.Windows.Forms.ListViewItem("Rays VRCE28N", 17);
+            System.Windows.Forms.ListViewItem listViewItem168 = new System.Windows.Forms.ListViewItem("Rays VR GT-TypeM", 18);
+            System.Windows.Forms.ListViewItem listViewItem169 = new System.Windows.Forms.ListViewItem("Rays Gram Lights 57F", 19);
+            System.Windows.Forms.ListViewItem listViewItem170 = new System.Windows.Forms.ListViewItem("Rays X401", 20);
+            System.Windows.Forms.ListViewItem listViewItem171 = new System.Windows.Forms.ListViewItem("Rays GABBANA", 21);
+            System.Windows.Forms.ListViewItem listViewItem172 = new System.Windows.Forms.ListViewItem("RAYS VR GT-TypeC", 22);
+            System.Windows.Forms.ListViewItem listViewItem173 = new System.Windows.Forms.ListViewItem("Rays BL-10-SX", 23);
+            System.Windows.Forms.ListViewItem listViewItem174 = new System.Windows.Forms.ListViewItem("Rays Shotgun", 24);
+            System.Windows.Forms.ListViewItem listViewItem175 = new System.Windows.Forms.ListViewItem("Rays VR RE30", 25);
+            System.Windows.Forms.ListViewItem listViewItem176 = new System.Windows.Forms.ListViewItem("Rays G-Games 77NTL", 26);
+            System.Windows.Forms.ListViewItem listViewItem177 = new System.Windows.Forms.ListViewItem("Rays VR.G10", 27);
+            System.Windows.Forms.ListViewItem listViewItem178 = new System.Windows.Forms.ListViewItem("Rays SPR-EX", 28);
+            System.Windows.Forms.ListViewItem listViewItem179 = new System.Windows.Forms.ListViewItem("Rays GramLights 57 Accelerate", 29);
+            System.Windows.Forms.ListViewItem listViewItem180 = new System.Windows.Forms.ListViewItem("Rays Gram Lights 57D", 30);
+            System.Windows.Forms.ListViewItem listViewItem181 = new System.Windows.Forms.ListViewItem("Rays Black Fleet F2B", 31);
+            System.Windows.Forms.ListViewItem listViewItem182 = new System.Windows.Forms.ListViewItem("Rays Stratagia Amarena", 32);
+            System.Windows.Forms.ListViewItem listViewItem183 = new System.Windows.Forms.ListViewItem("Rays VR C345 PRIME", 33);
+            System.Windows.Forms.ListViewItem listViewItem184 = new System.Windows.Forms.ListViewItem("Rays Black Fleet V350", 34);
+            System.Windows.Forms.ListViewItem listViewItem185 = new System.Windows.Forms.ListViewItem("Rays Homura 2X8GT", 35);
+            System.Windows.Forms.ListViewItem listViewItem186 = new System.Windows.Forms.ListViewItem("Rays Stratage Arpione", 36);
+            System.Windows.Forms.ListViewItem listViewItem187 = new System.Windows.Forms.ListViewItem("Rays GramLights 57 FXX", 37);
+            System.Windows.Forms.ListViewItem listViewItem188 = new System.Windows.Forms.ListViewItem("Rays Scudo", 38);
+            System.Windows.Forms.ListViewItem listViewItem189 = new System.Windows.Forms.ListViewItem("Rays GTU", 39);
+            System.Windows.Forms.ListViewItem listViewItem190 = new System.Windows.Forms.ListViewItem("Yokohama Super ADVAN Racing Version 2", 40);
+            System.Windows.Forms.ListViewItem listViewItem191 = new System.Windows.Forms.ListViewItem("Yokohama AVS Model T5", 41);
+            System.Windows.Forms.ListViewItem listViewItem192 = new System.Windows.Forms.ListViewItem("Yokohama AVS Model T6", 42);
+            System.Windows.Forms.ListViewItem listViewItem193 = new System.Windows.Forms.ListViewItem("Yokohama Model T7", 43);
+            System.Windows.Forms.ListViewItem listViewItem194 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing TCII", 44);
+            System.Windows.Forms.ListViewItem listViewItem195 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RS", 45);
+            System.Windows.Forms.ListViewItem listViewItem196 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RCII", 46);
+            System.Windows.Forms.ListViewItem listViewItem197 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RGII", 47);
+            System.Windows.Forms.ListViewItem listViewItem198 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RS-D", 48);
+            System.Windows.Forms.ListViewItem listViewItem199 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RCIII", 49);
+            System.Windows.Forms.ListViewItem listViewItem200 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RZ", 50);
+            System.Windows.Forms.ListViewItem listViewItem201 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RG-D", 51);
+            System.Windows.Forms.ListViewItem listViewItem202 = new System.Windows.Forms.ListViewItem("Yokohama AVS Model F15", 52);
+            System.Windows.Forms.ListViewItem listViewItem203 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing GT", 53);
+            System.Windows.Forms.ListViewItem listViewItem204 = new System.Windows.Forms.ListViewItem("Yokohama ADVAN Racing RZ-DF", 54);
+            System.Windows.Forms.ListViewItem listViewItem205 = new System.Windows.Forms.ListViewItem("Yokohama KREUTZER Series VI", 55);
+            System.Windows.Forms.ListViewItem listViewItem206 = new System.Windows.Forms.ListViewItem("Watanabe Eight Spoke", 56);
+            System.Windows.Forms.ListViewItem listViewItem207 = new System.Windows.Forms.ListViewItem("Watanabe Cyclone", 57);
+            System.Windows.Forms.ListViewItem listViewItem208 = new System.Windows.Forms.ListViewItem("Watanabe Stellar", 58);
+            System.Windows.Forms.ListViewItem listViewItem209 = new System.Windows.Forms.ListViewItem("Watanabe GR-8", 59);
+            System.Windows.Forms.ListViewItem listViewItem210 = new System.Windows.Forms.ListViewItem("Watanabe NEW RS8", 60);
+            System.Windows.Forms.ListViewItem listViewItem211 = new System.Windows.Forms.ListViewItem("OZ Formula-HLT", 61);
+            System.Windows.Forms.ListViewItem listViewItem212 = new System.Windows.Forms.ListViewItem("OZ Botticelli-3", 62);
+            System.Windows.Forms.ListViewItem listViewItem213 = new System.Windows.Forms.ListViewItem("OZ Torino", 63);
+            System.Windows.Forms.ListViewItem listViewItem214 = new System.Windows.Forms.ListViewItem("OZ Legend", 64);
+            System.Windows.Forms.ListViewItem listViewItem215 = new System.Windows.Forms.ListViewItem("OZ Ultraleggera", 65);
+            System.Windows.Forms.ListViewItem listViewItem216 = new System.Windows.Forms.ListViewItem("OZ Versilia", 66);
+            System.Windows.Forms.ListViewItem listViewItem217 = new System.Windows.Forms.ListViewItem("OZ Superturismo-LM", 67);
+            System.Windows.Forms.ListViewItem listViewItem218 = new System.Windows.Forms.ListViewItem("OZ Italia 150", 68);
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("装着しない");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("Racing Stripe 1", 0);
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("Fire Pattern 1", 1);
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("Racing Stripe 2", 3);
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Fire Pattern 2", 4);
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("Pac-Man", 6);
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("Namco", 7);
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("Works Colour", 8);
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("Racing Stripe 3", 9);
+            System.Windows.Forms.ListViewItem listViewItem219 = new System.Windows.Forms.ListViewItem("Fire Pattern 3", 10);
+            System.Windows.Forms.ListViewItem listViewItem220 = new System.Windows.Forms.ListViewItem("Tribal 1", 12);
+            System.Windows.Forms.ListViewItem listViewItem221 = new System.Windows.Forms.ListViewItem("Camo 1", 13);
+            System.Windows.Forms.ListViewItem listViewItem222 = new System.Windows.Forms.ListViewItem("One Point 1", 15);
+            System.Windows.Forms.ListViewItem listViewItem223 = new System.Windows.Forms.ListViewItem("Fire Pattern 4", 16);
+            System.Windows.Forms.ListViewItem listViewItem224 = new System.Windows.Forms.ListViewItem("Japonism 1", 18);
+            System.Windows.Forms.ListViewItem listViewItem225 = new System.Windows.Forms.ListViewItem(new string[] {
             "Competition 1"}, 20, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Empty, null);
-            System.Windows.Forms.ListViewItem listViewItem154 = new System.Windows.Forms.ListViewItem("Racing Stripe 4", 21);
-            System.Windows.Forms.ListViewItem listViewItem155 = new System.Windows.Forms.ListViewItem("Animal 1", 22);
-            System.Windows.Forms.ListViewItem listViewItem156 = new System.Windows.Forms.ListViewItem("Tribal 2", 24);
-            System.Windows.Forms.ListViewItem listViewItem157 = new System.Windows.Forms.ListViewItem("Graffiti 1", 26);
-            System.Windows.Forms.ListViewItem listViewItem158 = new System.Windows.Forms.ListViewItem("Checker 1", 28);
-            System.Windows.Forms.ListViewItem listViewItem159 = new System.Windows.Forms.ListViewItem("Camo 2", 29);
-            System.Windows.Forms.ListViewItem listViewItem160 = new System.Windows.Forms.ListViewItem("Japonism 2", 31);
-            System.Windows.Forms.ListViewItem listViewItem161 = new System.Windows.Forms.ListViewItem("Animal 2", 33);
-            System.Windows.Forms.ListViewItem listViewItem162 = new System.Windows.Forms.ListViewItem("One Point 2", 34);
-            System.Windows.Forms.ListViewItem listViewItem163 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem226 = new System.Windows.Forms.ListViewItem("Racing Stripe 4", 21);
+            System.Windows.Forms.ListViewItem listViewItem227 = new System.Windows.Forms.ListViewItem("Animal 1", 22);
+            System.Windows.Forms.ListViewItem listViewItem228 = new System.Windows.Forms.ListViewItem("Tribal 2", 24);
+            System.Windows.Forms.ListViewItem listViewItem229 = new System.Windows.Forms.ListViewItem("Graffiti 1", 26);
+            System.Windows.Forms.ListViewItem listViewItem230 = new System.Windows.Forms.ListViewItem("Checker 1", 28);
+            System.Windows.Forms.ListViewItem listViewItem231 = new System.Windows.Forms.ListViewItem("Camo 2", 29);
+            System.Windows.Forms.ListViewItem listViewItem232 = new System.Windows.Forms.ListViewItem("Japonism 2", 31);
+            System.Windows.Forms.ListViewItem listViewItem233 = new System.Windows.Forms.ListViewItem("Animal 2", 33);
+            System.Windows.Forms.ListViewItem listViewItem234 = new System.Windows.Forms.ListViewItem("One Point 2", 34);
+            System.Windows.Forms.ListViewItem listViewItem235 = new System.Windows.Forms.ListViewItem(new string[] {
             "Graffiti 2"}, 36, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Empty, null);
-            System.Windows.Forms.ListViewItem listViewItem164 = new System.Windows.Forms.ListViewItem("Tribal 3", 38);
-            System.Windows.Forms.ListViewItem listViewItem165 = new System.Windows.Forms.ListViewItem("Galaga", 39);
-            System.Windows.Forms.ListViewItem listViewItem166 = new System.Windows.Forms.ListViewItem("One Point 3", 40);
-            System.Windows.Forms.ListViewItem listViewItem167 = new System.Windows.Forms.ListViewItem("Graffiti 3", 41);
-            System.Windows.Forms.ListViewItem listViewItem168 = new System.Windows.Forms.ListViewItem("Pin Stripe", 43);
-            System.Windows.Forms.ListViewItem listViewItem220 = new System.Windows.Forms.ListViewItem("Competition 2", 44);
-            System.Windows.Forms.ListViewItem listViewItem221 = new System.Windows.Forms.ListViewItem("Racing Stripe 5", 46);
-            System.Windows.Forms.ListViewItem listViewItem222 = new System.Windows.Forms.ListViewItem("Thunder Bolt 1", 47);
-            System.Windows.Forms.ListViewItem listViewItem223 = new System.Windows.Forms.ListViewItem("Fire Pattern 5", 48);
-            System.Windows.Forms.ListViewItem listViewItem224 = new System.Windows.Forms.ListViewItem("Tribal 4", 50);
-            System.Windows.Forms.ListViewItem listViewItem225 = new System.Windows.Forms.ListViewItem("Competition 4", 51);
-            System.Windows.Forms.ListViewItem listViewItem226 = new System.Windows.Forms.ListViewItem("Racing Stripe 6", 53);
-            System.Windows.Forms.ListViewItem listViewItem227 = new System.Windows.Forms.ListViewItem("Thunder Bolt 2", 55);
-            System.Windows.Forms.ListViewItem listViewItem228 = new System.Windows.Forms.ListViewItem("Tribal 5", 57);
-            System.Windows.Forms.ListViewItem listViewItem229 = new System.Windows.Forms.ListViewItem("Japonism 3", 54);
-            System.Windows.Forms.ListViewItem listViewItem230 = new System.Windows.Forms.ListViewItem("Checker 2", 58);
-            System.Windows.Forms.ListViewItem listViewItem231 = new System.Windows.Forms.ListViewItem("Competition 5", 59);
-            System.Windows.Forms.ListViewItem listViewItem232 = new System.Windows.Forms.ListViewItem("Graffiti 5", 61);
-            System.Windows.Forms.ListViewItem listViewItem233 = new System.Windows.Forms.ListViewItem("Two Tone", 62);
-            System.Windows.Forms.ListViewItem listViewItem234 = new System.Windows.Forms.ListViewItem("Japonism 4", 63);
-            System.Windows.Forms.ListViewItem listViewItem235 = new System.Windows.Forms.ListViewItem("Pin Stripe 2", 64);
-            System.Windows.Forms.ListViewItem listViewItem236 = new System.Windows.Forms.ListViewItem("Competition 6", 65);
-            System.Windows.Forms.ListViewItem listViewItem237 = new System.Windows.Forms.ListViewItem("Graffiti 6", 67);
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("装着しない");
-            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("カスタムカラー1", 0);
-            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("カスタムカラー2", 1);
-            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("カスタムカラー3", 2);
-            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("カスタムカラー4", 3);
-            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("カスタムカラー5", 4);
-            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("カスタムカラー6", 5);
-            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("カスタムカラー7", 6);
-            System.Windows.Forms.ListViewItem listViewItem99 = new System.Windows.Forms.ListViewItem("カスタムカラー8", 7);
-            System.Windows.Forms.ListViewItem listViewItem100 = new System.Windows.Forms.ListViewItem("カスタムカラー9", 8);
-            System.Windows.Forms.ListViewItem listViewItem101 = new System.Windows.Forms.ListViewItem("カスタムカラー10", 9);
-            System.Windows.Forms.ListViewItem listViewItem102 = new System.Windows.Forms.ListViewItem("カスタムカラー11", 10);
-            System.Windows.Forms.ListViewItem listViewItem103 = new System.Windows.Forms.ListViewItem("カスタムカラー12", 11);
-            System.Windows.Forms.ListViewItem listViewItem104 = new System.Windows.Forms.ListViewItem("カスタムカラー13", 12);
-            System.Windows.Forms.ListViewItem listViewItem105 = new System.Windows.Forms.ListViewItem("カスタムカラー14", 13);
-            System.Windows.Forms.ListViewItem listViewItem106 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Custom Colour 15"}, 14, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Empty, null);
-            System.Windows.Forms.ListViewItem listViewItem169 = new System.Windows.Forms.ListViewItem("カスタムカラー16", 15);
-            System.Windows.Forms.ListViewItem listViewItem170 = new System.Windows.Forms.ListViewItem("カスタムカラー17", 16);
-            System.Windows.Forms.ListViewItem listViewItem171 = new System.Windows.Forms.ListViewItem("カスタムカラー18", 17);
-            System.Windows.Forms.ListViewItem listViewItem172 = new System.Windows.Forms.ListViewItem("カスタムカラー19", 18);
-            System.Windows.Forms.ListViewItem listViewItem173 = new System.Windows.Forms.ListViewItem("カスタムカラー20", 19);
-            System.Windows.Forms.ListViewItem listViewItem174 = new System.Windows.Forms.ListViewItem("カスタムカラー21", 20);
-            System.Windows.Forms.ListViewItem listViewItem175 = new System.Windows.Forms.ListViewItem("カスタムカラー22", 21);
-            System.Windows.Forms.ListViewItem listViewItem176 = new System.Windows.Forms.ListViewItem("カスタムカラー23", 22);
-            System.Windows.Forms.ListViewItem listViewItem177 = new System.Windows.Forms.ListViewItem("カスタムカラー24", 23);
-            System.Windows.Forms.ListViewItem listViewItem178 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Custom Colour 25"}, 24, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Empty, null);
-            System.Windows.Forms.ListViewItem listViewItem179 = new System.Windows.Forms.ListViewItem("カスタムカラー26", 25);
-            System.Windows.Forms.ListViewItem listViewItem180 = new System.Windows.Forms.ListViewItem("カスタムカラー27", 26);
-            System.Windows.Forms.ListViewItem listViewItem181 = new System.Windows.Forms.ListViewItem("カスタムカラー28", 27);
-            System.Windows.Forms.ListViewItem listViewItem182 = new System.Windows.Forms.ListViewItem("カスタムカラー29", 28);
-            System.Windows.Forms.ListViewItem listViewItem183 = new System.Windows.Forms.ListViewItem("カスタムカラー30", 29);
-            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("デフォルト");
-            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("カーボントランク", 0);
-            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("デフォルト");
-            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem("エアロミラー", 0);
-            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("カーボンエアロミラー", 1);
-            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("デフォルト");
-            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("カーボンフード", 0);
-            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("FRPキャップAA", 1);
-            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("ダクト付きカーボンフード1", 2);
-            System.Windows.Forms.ListViewItem listViewItem39 = new System.Windows.Forms.ListViewItem("FRPフードB", 3);
-            System.Windows.Forms.ListViewItem listViewItem40 = new System.Windows.Forms.ListViewItem("FRPCカップ", 4);
-            System.Windows.Forms.ListViewItem listViewItem41 = new System.Windows.Forms.ListViewItem("FRPフードD", 5);
-            System.Windows.Forms.ListViewItem listViewItem42 = new System.Windows.Forms.ListViewItem("ダクト2付きカーボンフード", 6);
-            System.Windows.Forms.ListViewItem listViewItem43 = new System.Windows.Forms.ListViewItem("装着しない");
-            System.Windows.Forms.ListViewItem listViewItem44 = new System.Windows.Forms.ListViewItem("イルミネーション1", 0);
-            System.Windows.Forms.ListViewItem listViewItem45 = new System.Windows.Forms.ListViewItem("ストライプ1", 1);
-            System.Windows.Forms.ListViewItem listViewItem46 = new System.Windows.Forms.ListViewItem("YMSPEEDロゴ", 2);
-            System.Windows.Forms.ListViewItem listViewItem47 = new System.Windows.Forms.ListViewItem("ドットパターン1", 3);
-            System.Windows.Forms.ListViewItem listViewItem48 = new System.Windows.Forms.ListViewItem("Galaga", 4);
-            System.Windows.Forms.ListViewItem listViewItem49 = new System.Windows.Forms.ListViewItem("Coloured", 5);
-            System.Windows.Forms.ListViewItem listViewItem50 = new System.Windows.Forms.ListViewItem("Stripes 2", 6);
-            System.Windows.Forms.ListViewItem listViewItem51 = new System.Windows.Forms.ListViewItem("Pac-Man", 7);
-            System.Windows.Forms.ListViewItem listViewItem107 = new System.Windows.Forms.ListViewItem("イルミネーション2", 8);
-            System.Windows.Forms.ListViewItem listViewItem108 = new System.Windows.Forms.ListViewItem("Plated", 9);
-            System.Windows.Forms.ListViewItem listViewItem109 = new System.Windows.Forms.ListViewItem("Dot Pattern 2", 10);
-            System.Windows.Forms.ListViewItem listViewItem110 = new System.Windows.Forms.ListViewItem("Stripes 3", 11);
-            System.Windows.Forms.ListViewItem listViewItem111 = new System.Windows.Forms.ListViewItem("Stripes 4", 12);
-            System.Windows.Forms.ListViewItem listViewItem112 = new System.Windows.Forms.ListViewItem("Dot Pattern 3", 13);
-            System.Windows.Forms.ListViewItem listViewItem113 = new System.Windows.Forms.ListViewItem("イルミネーション3", 14);
-            System.Windows.Forms.ListViewItem listViewItem52 = new System.Windows.Forms.ListViewItem("装着しない");
-            System.Windows.Forms.ListViewItem listViewItem53 = new System.Windows.Forms.ListViewItem("ストレートグリーン", 0);
-            System.Windows.Forms.ListViewItem listViewItem54 = new System.Windows.Forms.ListViewItem("ストレートブルー", 1);
-            System.Windows.Forms.ListViewItem listViewItem55 = new System.Windows.Forms.ListViewItem("ストレートパープル", 2);
-            System.Windows.Forms.ListViewItem listViewItem56 = new System.Windows.Forms.ListViewItem("ストレートレッド", 3);
-            System.Windows.Forms.ListViewItem listViewItem57 = new System.Windows.Forms.ListViewItem("ストレートイエロー", 4);
-            System.Windows.Forms.ListViewItem listViewItem58 = new System.Windows.Forms.ListViewItem("ストレートダークパープル", 5);
-            System.Windows.Forms.ListViewItem listViewItem59 = new System.Windows.Forms.ListViewItem("スポットグリーン", 6);
-            System.Windows.Forms.ListViewItem listViewItem60 = new System.Windows.Forms.ListViewItem("スポットブルー", 7);
-            System.Windows.Forms.ListViewItem listViewItem114 = new System.Windows.Forms.ListViewItem("スポットパープル", 8);
-            System.Windows.Forms.ListViewItem listViewItem115 = new System.Windows.Forms.ListViewItem("スポットレッド", 9);
-            System.Windows.Forms.ListViewItem listViewItem116 = new System.Windows.Forms.ListViewItem("スポットイエロー", 10);
-            System.Windows.Forms.ListViewItem listViewItem117 = new System.Windows.Forms.ListViewItem("スポットダークパープル", 11);
+            System.Windows.Forms.ListViewItem listViewItem236 = new System.Windows.Forms.ListViewItem("Tribal 3", 38);
+            System.Windows.Forms.ListViewItem listViewItem237 = new System.Windows.Forms.ListViewItem("Galaga", 39);
+            System.Windows.Forms.ListViewItem listViewItem238 = new System.Windows.Forms.ListViewItem("One Point 3", 40);
+            System.Windows.Forms.ListViewItem listViewItem239 = new System.Windows.Forms.ListViewItem("Graffiti 3", 41);
+            System.Windows.Forms.ListViewItem listViewItem240 = new System.Windows.Forms.ListViewItem("Pin Stripe", 43);
+            System.Windows.Forms.ListViewItem listViewItem241 = new System.Windows.Forms.ListViewItem("Competition 2", 44);
+            System.Windows.Forms.ListViewItem listViewItem242 = new System.Windows.Forms.ListViewItem("Racing Stripe 5", 46);
+            System.Windows.Forms.ListViewItem listViewItem243 = new System.Windows.Forms.ListViewItem("Thunder Bolt 1", 47);
+            System.Windows.Forms.ListViewItem listViewItem244 = new System.Windows.Forms.ListViewItem("Fire Pattern 5", 48);
+            System.Windows.Forms.ListViewItem listViewItem245 = new System.Windows.Forms.ListViewItem("Tribal 4", 50);
+            System.Windows.Forms.ListViewItem listViewItem246 = new System.Windows.Forms.ListViewItem("Competition 4", 51);
+            System.Windows.Forms.ListViewItem listViewItem247 = new System.Windows.Forms.ListViewItem("Racing Stripe 6", 53);
+            System.Windows.Forms.ListViewItem listViewItem248 = new System.Windows.Forms.ListViewItem("Thunder Bolt 2", 55);
+            System.Windows.Forms.ListViewItem listViewItem249 = new System.Windows.Forms.ListViewItem("Tribal 5", 57);
+            System.Windows.Forms.ListViewItem listViewItem250 = new System.Windows.Forms.ListViewItem("Japonism 3", 54);
+            System.Windows.Forms.ListViewItem listViewItem251 = new System.Windows.Forms.ListViewItem("Checker 2", 58);
+            System.Windows.Forms.ListViewItem listViewItem252 = new System.Windows.Forms.ListViewItem("Competition 5", 59);
+            System.Windows.Forms.ListViewItem listViewItem253 = new System.Windows.Forms.ListViewItem("Graffiti 5", 61);
+            System.Windows.Forms.ListViewItem listViewItem254 = new System.Windows.Forms.ListViewItem("Two Tone", 62);
+            System.Windows.Forms.ListViewItem listViewItem255 = new System.Windows.Forms.ListViewItem("Japonism 4", 63);
+            System.Windows.Forms.ListViewItem listViewItem256 = new System.Windows.Forms.ListViewItem("Pin Stripe 2", 64);
+            System.Windows.Forms.ListViewItem listViewItem257 = new System.Windows.Forms.ListViewItem("Competition 6", 65);
+            System.Windows.Forms.ListViewItem listViewItem258 = new System.Windows.Forms.ListViewItem("Graffiti 6", 67);
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("装着しない");
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("カスタムカラー1", 0);
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("カスタムカラー2", 1);
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("カスタムカラー3", 2);
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("カスタムカラー4", 3);
+            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("カスタムカラー5", 4);
+            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("カスタムカラー6", 5);
+            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("カスタムカラー7", 6);
+            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("カスタムカラー8", 7);
+            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("カスタムカラー9", 8);
+            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("カスタムカラー10", 9);
+            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("カスタムカラー11", 10);
+            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("カスタムカラー12", 11);
+            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("カスタムカラー13", 12);
+            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("カスタムカラー14", 13);
+            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem(new string[] {
+            "カスタムカラー15"}, 14, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Empty, null);
+            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("カスタムカラー16", 15);
+            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("カスタムカラー17", 16);
+            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("カスタムカラー18", 17);
+            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("カスタムカラー19", 18);
+            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("カスタムカラー20", 19);
+            System.Windows.Forms.ListViewItem listViewItem39 = new System.Windows.Forms.ListViewItem("カスタムカラー21", 20);
+            System.Windows.Forms.ListViewItem listViewItem40 = new System.Windows.Forms.ListViewItem("カスタムカラー22", 21);
+            System.Windows.Forms.ListViewItem listViewItem41 = new System.Windows.Forms.ListViewItem("カスタムカラー23", 22);
+            System.Windows.Forms.ListViewItem listViewItem42 = new System.Windows.Forms.ListViewItem("カスタムカラー24", 23);
+            System.Windows.Forms.ListViewItem listViewItem43 = new System.Windows.Forms.ListViewItem(new string[] {
+            "カスタムカラー25"}, 24, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Empty, null);
+            System.Windows.Forms.ListViewItem listViewItem44 = new System.Windows.Forms.ListViewItem("カスタムカラー26", 25);
+            System.Windows.Forms.ListViewItem listViewItem45 = new System.Windows.Forms.ListViewItem("カスタムカラー27", 26);
+            System.Windows.Forms.ListViewItem listViewItem46 = new System.Windows.Forms.ListViewItem("カスタムカラー28", 27);
+            System.Windows.Forms.ListViewItem listViewItem47 = new System.Windows.Forms.ListViewItem("カスタムカラー29", 28);
+            System.Windows.Forms.ListViewItem listViewItem48 = new System.Windows.Forms.ListViewItem("カスタムカラー30", 29);
+            System.Windows.Forms.ListViewItem listViewItem49 = new System.Windows.Forms.ListViewItem("デフォルト");
+            System.Windows.Forms.ListViewItem listViewItem50 = new System.Windows.Forms.ListViewItem("カーボントランク", 0);
+            System.Windows.Forms.ListViewItem listViewItem51 = new System.Windows.Forms.ListViewItem("デフォルト");
+            System.Windows.Forms.ListViewItem listViewItem52 = new System.Windows.Forms.ListViewItem("エアロミラー", 0);
+            System.Windows.Forms.ListViewItem listViewItem53 = new System.Windows.Forms.ListViewItem("カーボンエアロミラー", 1);
+            System.Windows.Forms.ListViewItem listViewItem54 = new System.Windows.Forms.ListViewItem("デフォルト");
+            System.Windows.Forms.ListViewItem listViewItem55 = new System.Windows.Forms.ListViewItem("カーボンフード", 0);
+            System.Windows.Forms.ListViewItem listViewItem56 = new System.Windows.Forms.ListViewItem("FRPキャップAA", 1);
+            System.Windows.Forms.ListViewItem listViewItem57 = new System.Windows.Forms.ListViewItem("ダクト付きカーボンフード1", 2);
+            System.Windows.Forms.ListViewItem listViewItem58 = new System.Windows.Forms.ListViewItem("FRPフードB", 3);
+            System.Windows.Forms.ListViewItem listViewItem59 = new System.Windows.Forms.ListViewItem("FRPCカップ", 4);
+            System.Windows.Forms.ListViewItem listViewItem60 = new System.Windows.Forms.ListViewItem("FRPフードD", 5);
+            System.Windows.Forms.ListViewItem listViewItem61 = new System.Windows.Forms.ListViewItem("ダクト付きカーボンフード2", 6);
+            System.Windows.Forms.ListViewItem listViewItem62 = new System.Windows.Forms.ListViewItem("装着しない");
+            System.Windows.Forms.ListViewItem listViewItem63 = new System.Windows.Forms.ListViewItem("イルミネーション1", 0);
+            System.Windows.Forms.ListViewItem listViewItem64 = new System.Windows.Forms.ListViewItem("ストライプ1", 1);
+            System.Windows.Forms.ListViewItem listViewItem65 = new System.Windows.Forms.ListViewItem("YMSPEEDロゴ", 2);
+            System.Windows.Forms.ListViewItem listViewItem66 = new System.Windows.Forms.ListViewItem("ドットパターン1", 3);
+            System.Windows.Forms.ListViewItem listViewItem67 = new System.Windows.Forms.ListViewItem("ガラガ", 4);
+            System.Windows.Forms.ListViewItem listViewItem68 = new System.Windows.Forms.ListViewItem("カラー", 5);
+            System.Windows.Forms.ListViewItem listViewItem69 = new System.Windows.Forms.ListViewItem("ストライプ2", 6);
+            System.Windows.Forms.ListViewItem listViewItem70 = new System.Windows.Forms.ListViewItem("パックマン", 7);
+            System.Windows.Forms.ListViewItem listViewItem71 = new System.Windows.Forms.ListViewItem("イルミネーション2", 8);
+            System.Windows.Forms.ListViewItem listViewItem72 = new System.Windows.Forms.ListViewItem("メッキ", 9);
+            System.Windows.Forms.ListViewItem listViewItem73 = new System.Windows.Forms.ListViewItem("ドットパターン2", 10);
+            System.Windows.Forms.ListViewItem listViewItem74 = new System.Windows.Forms.ListViewItem("ストライプ3", 11);
+            System.Windows.Forms.ListViewItem listViewItem75 = new System.Windows.Forms.ListViewItem("ストライプ4", 12);
+            System.Windows.Forms.ListViewItem listViewItem76 = new System.Windows.Forms.ListViewItem("ドットパターン3", 13);
+            System.Windows.Forms.ListViewItem listViewItem77 = new System.Windows.Forms.ListViewItem("イルミネーション3", 14);
+            System.Windows.Forms.ListViewItem listViewItem78 = new System.Windows.Forms.ListViewItem("装着しない");
+            System.Windows.Forms.ListViewItem listViewItem79 = new System.Windows.Forms.ListViewItem("ストレートグリーン", 0);
+            System.Windows.Forms.ListViewItem listViewItem80 = new System.Windows.Forms.ListViewItem("ストレートブルー", 1);
+            System.Windows.Forms.ListViewItem listViewItem81 = new System.Windows.Forms.ListViewItem("ストレートパープル", 2);
+            System.Windows.Forms.ListViewItem listViewItem82 = new System.Windows.Forms.ListViewItem("ストレートレッド", 3);
+            System.Windows.Forms.ListViewItem listViewItem83 = new System.Windows.Forms.ListViewItem("ストレートイエロー", 4);
+            System.Windows.Forms.ListViewItem listViewItem84 = new System.Windows.Forms.ListViewItem("ストレートダークパープル", 5);
+            System.Windows.Forms.ListViewItem listViewItem85 = new System.Windows.Forms.ListViewItem("スポットグリーン", 6);
+            System.Windows.Forms.ListViewItem listViewItem86 = new System.Windows.Forms.ListViewItem("スポットブルー", 7);
+            System.Windows.Forms.ListViewItem listViewItem87 = new System.Windows.Forms.ListViewItem("スポットパープル", 8);
+            System.Windows.Forms.ListViewItem listViewItem88 = new System.Windows.Forms.ListViewItem("スポットレッド", 9);
+            System.Windows.Forms.ListViewItem listViewItem89 = new System.Windows.Forms.ListViewItem("スポットイエロー", 10);
+            System.Windows.Forms.ListViewItem listViewItem90 = new System.Windows.Forms.ListViewItem("スポットダークパープル", 11);
             this.btnEditorBack = new System.Windows.Forms.Button();
             this.lblCarEditor = new System.Windows.Forms.Label();
             this.btnEditorSave = new System.Windows.Forms.Button();
@@ -282,12 +282,22 @@
             this.lblTuningStage = new System.Windows.Forms.Label();
             this.numTuningStage = new System.Windows.Forms.NumericUpDown();
             this.picTrkCover = new System.Windows.Forms.PictureBox();
+            this.picBorder2 = new System.Windows.Forms.PictureBox();
             this.picSeperator1 = new System.Windows.Forms.PictureBox();
+            this.lblHandling = new System.Windows.Forms.Label();
             this.lblPower = new System.Windows.Forms.Label();
             this.picSeperator2 = new System.Windows.Forms.PictureBox();
             this.trkHandling = new System.Windows.Forms.TrackBar();
             this.trkPower = new System.Windows.Forms.TrackBar();
             this.picBackground = new System.Windows.Forms.PictureBox();
+            this.tabLicensePlate = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbPrefecture = new System.Windows.Forms.ComboBox();
+            this.picTemp = new System.Windows.Forms.PictureBox();
+            this.picWhite2 = new System.Windows.Forms.PictureBox();
+            this.txtNum2 = new System.Windows.Forms.TextBox();
+            this.txtNum1 = new System.Windows.Forms.TextBox();
+            this.picLicensePlate = new System.Windows.Forms.PictureBox();
             this.picCarPreview = new System.Windows.Forms.PictureBox();
             this.pnlColour = new System.Windows.Forms.Panel();
             this.tblColours = new System.Windows.Forms.TableLayoutPanel();
@@ -302,8 +312,6 @@
             this.btnColour2 = new System.Windows.Forms.Button();
             this.btnColour1 = new System.Windows.Forms.Button();
             this.lblChangeColour = new System.Windows.Forms.Label();
-            this.picBorder2 = new System.Windows.Forms.PictureBox();
-            this.lblHandling = new System.Windows.Forms.Label();
             this.partsSwitcher.SuspendLayout();
             this.tabAero.SuspendLayout();
             this.tabWing.SuspendLayout();
@@ -318,20 +326,23 @@
             this.tabTuning.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numTuningStage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTrkCover)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBorder2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSeperator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSeperator2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trkHandling)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trkPower)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBackground)).BeginInit();
+            this.tabLicensePlate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picTemp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWhite2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLicensePlate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCarPreview)).BeginInit();
             this.pnlColour.SuspendLayout();
             this.tblColours.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBorder2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEditorBack
             // 
-            this.btnEditorBack.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnEditorBack.ForeColor = System.Drawing.Color.Black;
             this.btnEditorBack.Location = new System.Drawing.Point(12, 7);
             this.btnEditorBack.Name = "btnEditorBack";
@@ -344,17 +355,16 @@
             // lblCarEditor
             // 
             this.lblCarEditor.AutoSize = true;
-            this.lblCarEditor.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCarEditor.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCarEditor.ForeColor = System.Drawing.Color.White;
             this.lblCarEditor.Location = new System.Drawing.Point(174, 6);
             this.lblCarEditor.Name = "lblCarEditor";
-            this.lblCarEditor.Size = new System.Drawing.Size(101, 25);
+            this.lblCarEditor.Size = new System.Drawing.Size(96, 25);
             this.lblCarEditor.TabIndex = 3;
             this.lblCarEditor.Text = "Car editor";
             // 
             // btnEditorSave
             // 
-            this.btnEditorSave.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnEditorSave.ForeColor = System.Drawing.Color.Black;
             this.btnEditorSave.Location = new System.Drawing.Point(93, 7);
             this.btnEditorSave.Name = "btnEditorSave";
@@ -379,8 +389,8 @@
             this.partsSwitcher.Controls.Add(this.tabPlateFrame);
             this.partsSwitcher.Controls.Add(this.tabNeons);
             this.partsSwitcher.Controls.Add(this.tabTuning);
-            this.partsSwitcher.Cursor = System.Windows.Forms.Cursors.Default;
-            this.partsSwitcher.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.partsSwitcher.Controls.Add(this.tabLicensePlate);
+            this.partsSwitcher.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partsSwitcher.Location = new System.Drawing.Point(0, 258);
             this.partsSwitcher.Name = "partsSwitcher";
             this.partsSwitcher.SelectedIndex = 0;
@@ -392,8 +402,6 @@
             // 
             this.tabAero.BackColor = System.Drawing.Color.White;
             this.tabAero.Controls.Add(this.lstAero);
-            this.tabAero.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tabAero.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabAero.Location = new System.Drawing.Point(4, 26);
             this.tabAero.Name = "tabAero";
             this.tabAero.Size = new System.Drawing.Size(806, 129);
@@ -406,25 +414,23 @@
             this.lstAero.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstAero.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstAero.HideSelection = false;
-            listViewItem1.StateImageIndex = 0;
-            listViewItem2.StateImageIndex = 0;
-            listViewItem74.StateImageIndex = 0;
-            listViewItem75.StateImageIndex = 0;
-            listViewItem76.StateImageIndex = 0;
-            listViewItem77.StateImageIndex = 0;
-            listViewItem78.StateImageIndex = 0;
-            listViewItem79.StateImageIndex = 0;
-            listViewItem80.StateImageIndex = 0;
+            listViewItem140.StateImageIndex = 0;
+            listViewItem141.StateImageIndex = 0;
+            listViewItem142.StateImageIndex = 0;
+            listViewItem143.StateImageIndex = 0;
+            listViewItem144.StateImageIndex = 0;
+            listViewItem145.StateImageIndex = 0;
+            listViewItem146.StateImageIndex = 0;
             this.lstAero.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem74,
-            listViewItem75,
-            listViewItem76,
-            listViewItem77,
-            listViewItem78,
-            listViewItem79,
-            listViewItem80});
+            listViewItem140,
+            listViewItem141,
+            listViewItem142,
+            listViewItem143,
+            listViewItem144,
+            listViewItem145,
+            listViewItem146,
+            listViewItem147,
+            listViewItem148});
             this.lstAero.LargeImageList = this.aeroList;
             this.lstAero.Location = new System.Drawing.Point(0, 0);
             this.lstAero.MultiSelect = false;
@@ -452,8 +458,6 @@
             // 
             this.tabWing.BackColor = System.Drawing.Color.White;
             this.tabWing.Controls.Add(this.lstWing);
-            this.tabWing.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tabWing.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabWing.Location = new System.Drawing.Point(4, 26);
             this.tabWing.Name = "tabWing";
             this.tabWing.Size = new System.Drawing.Size(806, 129);
@@ -466,23 +470,23 @@
             this.lstWing.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstWing.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstWing.HideSelection = false;
-            listViewItem3.StateImageIndex = 0;
-            listViewItem4.StateImageIndex = 0;
-            listViewItem5.StateImageIndex = 0;
-            listViewItem81.StateImageIndex = 0;
-            listViewItem82.StateImageIndex = 0;
-            listViewItem83.StateImageIndex = 0;
-            listViewItem84.StateImageIndex = 0;
-            listViewItem85.StateImageIndex = 0;
+            listViewItem149.StateImageIndex = 0;
+            listViewItem150.StateImageIndex = 0;
+            listViewItem151.StateImageIndex = 0;
+            listViewItem152.StateImageIndex = 0;
+            listViewItem153.StateImageIndex = 0;
+            listViewItem154.StateImageIndex = 0;
+            listViewItem155.StateImageIndex = 0;
+            listViewItem156.StateImageIndex = 0;
             this.lstWing.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem81,
-            listViewItem82,
-            listViewItem83,
-            listViewItem84,
-            listViewItem85});
+            listViewItem149,
+            listViewItem150,
+            listViewItem151,
+            listViewItem152,
+            listViewItem153,
+            listViewItem154,
+            listViewItem155,
+            listViewItem156});
             this.lstWing.LargeImageList = this.wingList;
             this.lstWing.Location = new System.Drawing.Point(0, 0);
             this.lstWing.MultiSelect = false;
@@ -500,16 +504,14 @@
             this.wingList.Images.SetKeyName(0, "nowing.jpg");
             this.wingList.Images.SetKeyName(1, "wing_s02_00.jpg");
             this.wingList.Images.SetKeyName(2, "wing_s02_01.jpg");
-            this.wingList.Images.SetKeyName(3, "wing_s02_02.jpg");
+            this.wingList.Images.SetKeyName(3, "wing_s02_02_en.jpg");
             this.wingList.Images.SetKeyName(4, "wing_s02_03.jpg");
             this.wingList.Images.SetKeyName(5, "wing_s02_04.jpg");
-            this.wingList.Images.SetKeyName(6, "wing_s02_05.jpg");
+            this.wingList.Images.SetKeyName(6, "wing_s02_05_en.jpg");
             // 
             // tabRims
             // 
             this.tabRims.Controls.Add(this.lstRims);
-            this.tabRims.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tabRims.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabRims.Location = new System.Drawing.Point(4, 26);
             this.tabRims.Name = "tabRims";
             this.tabRims.Size = new System.Drawing.Size(806, 129);
@@ -523,46 +525,68 @@
             this.lstRims.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstRims.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstRims.HideSelection = false;
+            listViewItem1.StateImageIndex = 0;
+            listViewItem2.StateImageIndex = 0;
+            listViewItem3.StateImageIndex = 0;
+            listViewItem4.StateImageIndex = 0;
+            listViewItem5.StateImageIndex = 0;
             listViewItem6.StateImageIndex = 0;
             listViewItem7.StateImageIndex = 0;
             listViewItem8.StateImageIndex = 0;
-            listViewItem9.StateImageIndex = 0;
-            listViewItem10.StateImageIndex = 0;
-            listViewItem11.StateImageIndex = 0;
-            listViewItem12.StateImageIndex = 0;
-            listViewItem13.StateImageIndex = 0;
             this.lstRims.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5,
             listViewItem6,
             listViewItem7,
             listViewItem8,
-            listViewItem9,
-            listViewItem10,
-            listViewItem11,
-            listViewItem12,
-            listViewItem13,
-            listViewItem86,
-            listViewItem87,
-            listViewItem88,
-            listViewItem89,
-            listViewItem90,
-            listViewItem136,
-            listViewItem137,
-            listViewItem138,
-            listViewItem139,
-            listViewItem140,
-            listViewItem141,
-            listViewItem142,
-            listViewItem143,
-            listViewItem144,
-            listViewItem145,
-            listViewItem146,
-            listViewItem147,
-            listViewItem148,
-            listViewItem149,
-            listViewItem150,
-            listViewItem151,
-            listViewItem152,
-            listViewItem153,
+            listViewItem157,
+            listViewItem158,
+            listViewItem159,
+            listViewItem160,
+            listViewItem161,
+            listViewItem162,
+            listViewItem163,
+            listViewItem164,
+            listViewItem165,
+            listViewItem166,
+            listViewItem167,
+            listViewItem168,
+            listViewItem169,
+            listViewItem170,
+            listViewItem171,
+            listViewItem172,
+            listViewItem173,
+            listViewItem174,
+            listViewItem175,
+            listViewItem176,
+            listViewItem177,
+            listViewItem178,
+            listViewItem179,
+            listViewItem180,
+            listViewItem181,
+            listViewItem182,
+            listViewItem183,
+            listViewItem184,
+            listViewItem185,
+            listViewItem186,
+            listViewItem187,
+            listViewItem188,
+            listViewItem189,
+            listViewItem190,
+            listViewItem191,
+            listViewItem192,
+            listViewItem193,
+            listViewItem194,
+            listViewItem195,
+            listViewItem196,
+            listViewItem197,
+            listViewItem198,
+            listViewItem199,
+            listViewItem200,
+            listViewItem201,
             listViewItem202,
             listViewItem203,
             listViewItem204,
@@ -579,29 +603,7 @@
             listViewItem215,
             listViewItem216,
             listViewItem217,
-            listViewItem218,
-            listViewItem219,
-            listViewItem259,
-            listViewItem260,
-            listViewItem261,
-            listViewItem262,
-            listViewItem263,
-            listViewItem264,
-            listViewItem265,
-            listViewItem266,
-            listViewItem267,
-            listViewItem268,
-            listViewItem269,
-            listViewItem270,
-            listViewItem271,
-            listViewItem272,
-            listViewItem273,
-            listViewItem274,
-            listViewItem275,
-            listViewItem276,
-            listViewItem277,
-            listViewItem278,
-            listViewItem279});
+            listViewItem218});
             this.lstRims.LargeImageList = this.rimsList;
             this.lstRims.Location = new System.Drawing.Point(0, 0);
             this.lstRims.MultiSelect = false;
@@ -690,7 +692,6 @@
             // tabStickers
             // 
             this.tabStickers.Controls.Add(this.lstStickers);
-            this.tabStickers.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabStickers.Location = new System.Drawing.Point(4, 26);
             this.tabStickers.Name = "tabStickers";
             this.tabStickers.Size = new System.Drawing.Size(806, 129);
@@ -704,44 +705,23 @@
             this.lstStickers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstStickers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstStickers.HideSelection = false;
+            listViewItem9.StateImageIndex = 0;
+            listViewItem10.StateImageIndex = 0;
+            listViewItem11.StateImageIndex = 0;
+            listViewItem12.StateImageIndex = 0;
+            listViewItem13.StateImageIndex = 0;
             listViewItem14.StateImageIndex = 0;
-            listViewItem15.StateImageIndex = 0;
-            listViewItem16.StateImageIndex = 0;
-            listViewItem17.StateImageIndex = 0;
-            listViewItem18.StateImageIndex = 0;
-            listViewItem19.StateImageIndex = 0;
             this.lstStickers.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
             listViewItem14,
             listViewItem15,
             listViewItem16,
             listViewItem17,
-            listViewItem18,
-            listViewItem19,
-            listViewItem20,
-            listViewItem21,
-            listViewItem91,
-            listViewItem92,
-            listViewItem93,
-            listViewItem94,
-            listViewItem95,
-            listViewItem96,
-            listViewItem97,
-            listViewItem98,
-            listViewItem154,
-            listViewItem155,
-            listViewItem156,
-            listViewItem157,
-            listViewItem158,
-            listViewItem159,
-            listViewItem160,
-            listViewItem161,
-            listViewItem162,
-            listViewItem163,
-            listViewItem164,
-            listViewItem165,
-            listViewItem166,
-            listViewItem167,
-            listViewItem168,
+            listViewItem219,
             listViewItem220,
             listViewItem221,
             listViewItem222,
@@ -759,7 +739,28 @@
             listViewItem234,
             listViewItem235,
             listViewItem236,
-            listViewItem237});
+            listViewItem237,
+            listViewItem238,
+            listViewItem239,
+            listViewItem240,
+            listViewItem241,
+            listViewItem242,
+            listViewItem243,
+            listViewItem244,
+            listViewItem245,
+            listViewItem246,
+            listViewItem247,
+            listViewItem248,
+            listViewItem249,
+            listViewItem250,
+            listViewItem251,
+            listViewItem252,
+            listViewItem253,
+            listViewItem254,
+            listViewItem255,
+            listViewItem256,
+            listViewItem257,
+            listViewItem258});
             this.lstStickers.LargeImageList = this.stickerList;
             this.lstStickers.Location = new System.Drawing.Point(0, 0);
             this.lstStickers.MultiSelect = false;
@@ -847,7 +848,6 @@
             // tabColour
             // 
             this.tabColour.Controls.Add(this.lstCustomColour);
-            this.tabColour.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabColour.Location = new System.Drawing.Point(4, 26);
             this.tabColour.Name = "tabColour";
             this.tabColour.Size = new System.Drawing.Size(806, 129);
@@ -861,13 +861,17 @@
             this.lstCustomColour.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstCustomColour.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstCustomColour.HideSelection = false;
+            listViewItem18.StateImageIndex = 0;
+            listViewItem19.StateImageIndex = 0;
+            listViewItem20.StateImageIndex = 0;
+            listViewItem21.StateImageIndex = 0;
             listViewItem22.StateImageIndex = 0;
             listViewItem23.StateImageIndex = 0;
-            listViewItem24.StateImageIndex = 0;
-            listViewItem25.StateImageIndex = 0;
-            listViewItem26.StateImageIndex = 0;
-            listViewItem27.StateImageIndex = 0;
             this.lstCustomColour.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem18,
+            listViewItem19,
+            listViewItem20,
+            listViewItem21,
             listViewItem22,
             listViewItem23,
             listViewItem24,
@@ -876,29 +880,25 @@
             listViewItem27,
             listViewItem28,
             listViewItem29,
-            listViewItem99,
-            listViewItem100,
-            listViewItem101,
-            listViewItem102,
-            listViewItem103,
-            listViewItem104,
-            listViewItem105,
-            listViewItem106,
-            listViewItem169,
-            listViewItem170,
-            listViewItem171,
-            listViewItem172,
-            listViewItem173,
-            listViewItem174,
-            listViewItem175,
-            listViewItem176,
-            listViewItem177,
-            listViewItem178,
-            listViewItem179,
-            listViewItem180,
-            listViewItem181,
-            listViewItem182,
-            listViewItem183});
+            listViewItem30,
+            listViewItem31,
+            listViewItem32,
+            listViewItem33,
+            listViewItem34,
+            listViewItem35,
+            listViewItem36,
+            listViewItem37,
+            listViewItem38,
+            listViewItem39,
+            listViewItem40,
+            listViewItem41,
+            listViewItem42,
+            listViewItem43,
+            listViewItem44,
+            listViewItem45,
+            listViewItem46,
+            listViewItem47,
+            listViewItem48});
             this.lstCustomColour.LargeImageList = this.customColourList;
             this.lstCustomColour.Location = new System.Drawing.Point(0, 0);
             this.lstCustomColour.MultiSelect = false;
@@ -947,7 +947,6 @@
             // tabTrunk
             // 
             this.tabTrunk.Controls.Add(this.lstTrunk);
-            this.tabTrunk.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabTrunk.Location = new System.Drawing.Point(4, 26);
             this.tabTrunk.Name = "tabTrunk";
             this.tabTrunk.Size = new System.Drawing.Size(806, 129);
@@ -961,11 +960,11 @@
             this.lstTrunk.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstTrunk.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstTrunk.HideSelection = false;
-            listViewItem30.StateImageIndex = 0;
-            listViewItem31.StateImageIndex = 0;
+            listViewItem49.StateImageIndex = 0;
+            listViewItem50.StateImageIndex = 0;
             this.lstTrunk.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem30,
-            listViewItem31});
+            listViewItem49,
+            listViewItem50});
             this.lstTrunk.LargeImageList = this.trunkList;
             this.lstTrunk.Location = new System.Drawing.Point(0, 0);
             this.lstTrunk.MultiSelect = false;
@@ -985,7 +984,6 @@
             // tabMirrors
             // 
             this.tabMirrors.Controls.Add(this.lstMirror);
-            this.tabMirrors.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabMirrors.Location = new System.Drawing.Point(4, 26);
             this.tabMirrors.Name = "tabMirrors";
             this.tabMirrors.Size = new System.Drawing.Size(806, 129);
@@ -999,12 +997,12 @@
             this.lstMirror.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstMirror.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstMirror.HideSelection = false;
-            listViewItem32.StateImageIndex = 0;
-            listViewItem33.StateImageIndex = 0;
+            listViewItem51.StateImageIndex = 0;
+            listViewItem52.StateImageIndex = 0;
             this.lstMirror.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem32,
-            listViewItem33,
-            listViewItem34});
+            listViewItem51,
+            listViewItem52,
+            listViewItem53});
             this.lstMirror.LargeImageList = this.mirrorList;
             this.lstMirror.Location = new System.Drawing.Point(0, 0);
             this.lstMirror.MultiSelect = false;
@@ -1025,7 +1023,6 @@
             // tabHood
             // 
             this.tabHood.Controls.Add(this.lstHood);
-            this.tabHood.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabHood.Location = new System.Drawing.Point(4, 26);
             this.tabHood.Name = "tabHood";
             this.tabHood.Size = new System.Drawing.Size(806, 129);
@@ -1039,17 +1036,17 @@
             this.lstHood.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstHood.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstHood.HideSelection = false;
-            listViewItem35.StateImageIndex = 0;
-            listViewItem36.StateImageIndex = 0;
+            listViewItem54.StateImageIndex = 0;
+            listViewItem55.StateImageIndex = 0;
             this.lstHood.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem35,
-            listViewItem36,
-            listViewItem37,
-            listViewItem38,
-            listViewItem39,
-            listViewItem40,
-            listViewItem41,
-            listViewItem42});
+            listViewItem54,
+            listViewItem55,
+            listViewItem56,
+            listViewItem57,
+            listViewItem58,
+            listViewItem59,
+            listViewItem60,
+            listViewItem61});
             this.lstHood.LargeImageList = this.hoodList;
             this.lstHood.Location = new System.Drawing.Point(0, 0);
             this.lstHood.MultiSelect = false;
@@ -1075,7 +1072,6 @@
             // tabPlateFrame
             // 
             this.tabPlateFrame.Controls.Add(this.lstPlateFrame);
-            this.tabPlateFrame.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPlateFrame.Location = new System.Drawing.Point(4, 26);
             this.tabPlateFrame.Name = "tabPlateFrame";
             this.tabPlateFrame.Size = new System.Drawing.Size(806, 129);
@@ -1089,25 +1085,25 @@
             this.lstPlateFrame.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstPlateFrame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstPlateFrame.HideSelection = false;
-            listViewItem43.StateImageIndex = 0;
-            listViewItem44.StateImageIndex = 0;
+            listViewItem62.StateImageIndex = 0;
+            listViewItem63.StateImageIndex = 0;
             this.lstPlateFrame.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem43,
-            listViewItem44,
-            listViewItem45,
-            listViewItem46,
-            listViewItem47,
-            listViewItem48,
-            listViewItem49,
-            listViewItem50,
-            listViewItem51,
-            listViewItem107,
-            listViewItem108,
-            listViewItem109,
-            listViewItem110,
-            listViewItem111,
-            listViewItem112,
-            listViewItem113});
+            listViewItem62,
+            listViewItem63,
+            listViewItem64,
+            listViewItem65,
+            listViewItem66,
+            listViewItem67,
+            listViewItem68,
+            listViewItem69,
+            listViewItem70,
+            listViewItem71,
+            listViewItem72,
+            listViewItem73,
+            listViewItem74,
+            listViewItem75,
+            listViewItem76,
+            listViewItem77});
             this.lstPlateFrame.LargeImageList = this.plateFrameList;
             this.lstPlateFrame.Location = new System.Drawing.Point(0, 0);
             this.lstPlateFrame.MultiSelect = false;
@@ -1141,7 +1137,6 @@
             // tabNeons
             // 
             this.tabNeons.Controls.Add(this.lstNeons);
-            this.tabNeons.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabNeons.Location = new System.Drawing.Point(4, 26);
             this.tabNeons.Name = "tabNeons";
             this.tabNeons.Size = new System.Drawing.Size(806, 129);
@@ -1155,22 +1150,22 @@
             this.lstNeons.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstNeons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstNeons.HideSelection = false;
-            listViewItem52.StateImageIndex = 0;
-            listViewItem53.StateImageIndex = 0;
+            listViewItem78.StateImageIndex = 0;
+            listViewItem79.StateImageIndex = 0;
             this.lstNeons.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem52,
-            listViewItem53,
-            listViewItem54,
-            listViewItem55,
-            listViewItem56,
-            listViewItem57,
-            listViewItem58,
-            listViewItem59,
-            listViewItem60,
-            listViewItem114,
-            listViewItem115,
-            listViewItem116,
-            listViewItem117});
+            listViewItem78,
+            listViewItem79,
+            listViewItem80,
+            listViewItem81,
+            listViewItem82,
+            listViewItem83,
+            listViewItem84,
+            listViewItem85,
+            listViewItem86,
+            listViewItem87,
+            listViewItem88,
+            listViewItem89,
+            listViewItem90});
             this.lstNeons.LargeImageList = this.neonsList;
             this.lstNeons.Location = new System.Drawing.Point(0, 0);
             this.lstNeons.MultiSelect = false;
@@ -1206,13 +1201,12 @@
             this.tabTuning.Controls.Add(this.picTrkCover);
             this.tabTuning.Controls.Add(this.picBorder2);
             this.tabTuning.Controls.Add(this.picSeperator1);
+            this.tabTuning.Controls.Add(this.lblHandling);
+            this.tabTuning.Controls.Add(this.lblPower);
             this.tabTuning.Controls.Add(this.picSeperator2);
             this.tabTuning.Controls.Add(this.trkHandling);
             this.tabTuning.Controls.Add(this.trkPower);
             this.tabTuning.Controls.Add(this.picBackground);
-            this.tabTuning.Controls.Add(this.lblHandling);
-            this.tabTuning.Controls.Add(this.lblPower);
-            this.tabTuning.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabTuning.Location = new System.Drawing.Point(4, 26);
             this.tabTuning.Name = "tabTuning";
             this.tabTuning.Size = new System.Drawing.Size(806, 129);
@@ -1222,7 +1216,7 @@
             // 
             // lblHP
             // 
-            this.lblHP.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHP.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHP.ForeColor = System.Drawing.Color.Black;
             this.lblHP.Location = new System.Drawing.Point(8, 6);
             this.lblHP.Name = "lblHP";
@@ -1230,7 +1224,6 @@
             this.lblHP.TabIndex = 13;
             this.lblHP.Text = "HP: 760/B";
             this.lblHP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblHP.Click += new System.EventHandler(this.lblHP_Click);
             // 
             // lblTuningStage
             // 
@@ -1265,6 +1258,15 @@
             this.picTrkCover.TabIndex = 2;
             this.picTrkCover.TabStop = false;
             // 
+            // picBorder2
+            // 
+            this.picBorder2.BackColor = System.Drawing.Color.LightGray;
+            this.picBorder2.Location = new System.Drawing.Point(73, 82);
+            this.picBorder2.Name = "picBorder2";
+            this.picBorder2.Size = new System.Drawing.Size(725, 9);
+            this.picBorder2.TabIndex = 12;
+            this.picBorder2.TabStop = false;
+            // 
             // picSeperator1
             // 
             this.picSeperator1.BackColor = System.Drawing.Color.LightGray;
@@ -1273,6 +1275,16 @@
             this.picSeperator1.Size = new System.Drawing.Size(2, 46);
             this.picSeperator1.TabIndex = 9;
             this.picSeperator1.TabStop = false;
+            // 
+            // lblHandling
+            // 
+            this.lblHandling.ForeColor = System.Drawing.Color.Black;
+            this.lblHandling.Location = new System.Drawing.Point(0, 64);
+            this.lblHandling.Name = "lblHandling";
+            this.lblHandling.Size = new System.Drawing.Size(68, 16);
+            this.lblHandling.TabIndex = 4;
+            this.lblHandling.Text = "Handling";
+            this.lblHandling.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblPower
             // 
@@ -1323,6 +1335,154 @@
             this.picBackground.Size = new System.Drawing.Size(725, 46);
             this.picBackground.TabIndex = 11;
             this.picBackground.TabStop = false;
+            // 
+            // tabLicensePlate
+            // 
+            this.tabLicensePlate.Controls.Add(this.label1);
+            this.tabLicensePlate.Controls.Add(this.picTemp);
+            this.tabLicensePlate.Controls.Add(this.cmbPrefecture);
+            this.tabLicensePlate.Controls.Add(this.picWhite2);
+            this.tabLicensePlate.Controls.Add(this.txtNum2);
+            this.tabLicensePlate.Controls.Add(this.txtNum1);
+            this.tabLicensePlate.Controls.Add(this.picLicensePlate);
+            this.tabLicensePlate.Location = new System.Drawing.Point(4, 26);
+            this.tabLicensePlate.Name = "tabLicensePlate";
+            this.tabLicensePlate.Size = new System.Drawing.Size(806, 129);
+            this.tabLicensePlate.TabIndex = 11;
+            this.tabLicensePlate.Text = "License Plate";
+            this.tabLicensePlate.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(70)))), ((int)(((byte)(1)))));
+            this.label1.Location = new System.Drawing.Point(415, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 32);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "765";
+            // 
+            // cmbPrefecture
+            // 
+            this.cmbPrefecture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPrefecture.DropDownWidth = 48;
+            this.cmbPrefecture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbPrefecture.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPrefecture.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(70)))), ((int)(((byte)(1)))));
+            this.cmbPrefecture.FormattingEnabled = true;
+            this.cmbPrefecture.IntegralHeight = false;
+            this.cmbPrefecture.Items.AddRange(new object[] {
+            "不明",
+            "北海道",
+            "青森",
+            "岩手",
+            "宮城",
+            "秋田",
+            "山形",
+            "福島",
+            "茨城",
+            "栃木",
+            "群馬",
+            "埼玉",
+            "千葉",
+            "東京",
+            "神奈川",
+            "新潟",
+            "富山",
+            "石川",
+            "福井",
+            "山梨",
+            "長野",
+            "岐阜",
+            "静岡",
+            "愛知",
+            "三重",
+            "滋賀",
+            "京都",
+            "大阪",
+            "兵庫",
+            "奈良",
+            "和歌山",
+            "鳥取",
+            "島根",
+            "岡山",
+            "広島",
+            "山口",
+            "徳島",
+            "香川",
+            "愛媛",
+            "高知",
+            "福岡",
+            "佐賀",
+            "長崎",
+            "熊本",
+            "大分",
+            "宮崎",
+            "鹿児島",
+            "沖縄"});
+            this.cmbPrefecture.Location = new System.Drawing.Point(324, 14);
+            this.cmbPrefecture.MaxLength = 3;
+            this.cmbPrefecture.Name = "cmbPrefecture";
+            this.cmbPrefecture.Size = new System.Drawing.Size(116, 40);
+            this.cmbPrefecture.TabIndex = 41;
+            this.cmbPrefecture.SelectedIndexChanged += new System.EventHandler(this.cmbPrefecture_SelectedIndexChanged);
+            // 
+            // picTemp
+            // 
+            this.picTemp.Location = new System.Drawing.Point(421, 12);
+            this.picTemp.Name = "picTemp";
+            this.picTemp.Size = new System.Drawing.Size(64, 45);
+            this.picTemp.TabIndex = 45;
+            this.picTemp.TabStop = false;
+            // 
+            // picWhite2
+            // 
+            this.picWhite2.Location = new System.Drawing.Point(283, 60);
+            this.picWhite2.Name = "picWhite2";
+            this.picWhite2.Size = new System.Drawing.Size(35, 42);
+            this.picWhite2.TabIndex = 44;
+            this.picWhite2.TabStop = false;
+            // 
+            // txtNum2
+            // 
+            this.txtNum2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNum2.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(70)))), ((int)(((byte)(1)))));
+            this.txtNum2.Location = new System.Drawing.Point(412, 46);
+            this.txtNum2.MaxLength = 2;
+            this.txtNum2.Name = "txtNum2";
+            this.txtNum2.Size = new System.Drawing.Size(73, 74);
+            this.txtNum2.TabIndex = 42;
+            this.txtNum2.Text = "00";
+            this.txtNum2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNum2.TextChanged += new System.EventHandler(this.txtNum2_TextChanged);
+            this.txtNum2.Leave += new System.EventHandler(this.txtNum2_Leave);
+            // 
+            // txtNum1
+            // 
+            this.txtNum1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNum1.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(70)))), ((int)(((byte)(1)))));
+            this.txtNum1.Location = new System.Drawing.Point(324, 46);
+            this.txtNum1.MaxLength = 2;
+            this.txtNum1.Name = "txtNum1";
+            this.txtNum1.Size = new System.Drawing.Size(73, 74);
+            this.txtNum1.TabIndex = 39;
+            this.txtNum1.Text = "00";
+            this.txtNum1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNum1.TextChanged += new System.EventHandler(this.txtNum1_TextChanged);
+            this.txtNum1.Leave += new System.EventHandler(this.txtNum1_Leave);
+            // 
+            // picLicensePlate
+            // 
+            this.picLicensePlate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picLicensePlate.BackgroundImage")));
+            this.picLicensePlate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picLicensePlate.Location = new System.Drawing.Point(263, 5);
+            this.picLicensePlate.Name = "picLicensePlate";
+            this.picLicensePlate.Size = new System.Drawing.Size(255, 119);
+            this.picLicensePlate.TabIndex = 38;
+            this.picLicensePlate.TabStop = false;
             // 
             // picCarPreview
             // 
@@ -1517,7 +1677,7 @@
             // lblChangeColour
             // 
             this.lblChangeColour.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblChangeColour.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChangeColour.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChangeColour.ForeColor = System.Drawing.Color.White;
             this.lblChangeColour.Location = new System.Drawing.Point(0, 0);
             this.lblChangeColour.Name = "lblChangeColour";
@@ -1525,26 +1685,6 @@
             this.lblChangeColour.TabIndex = 10;
             this.lblChangeColour.Text = "Change colour";
             this.lblChangeColour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picBorder2
-            // 
-            this.picBorder2.BackColor = System.Drawing.Color.LightGray;
-            this.picBorder2.Location = new System.Drawing.Point(73, 82);
-            this.picBorder2.Name = "picBorder2";
-            this.picBorder2.Size = new System.Drawing.Size(725, 9);
-            this.picBorder2.TabIndex = 12;
-            this.picBorder2.TabStop = false;
-            // 
-            // lblHandling
-            // 
-            this.lblHandling.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHandling.ForeColor = System.Drawing.Color.Black;
-            this.lblHandling.Location = new System.Drawing.Point(0, 64);
-            this.lblHandling.Name = "lblHandling";
-            this.lblHandling.Size = new System.Drawing.Size(83, 16);
-            this.lblHandling.TabIndex = 4;
-            this.lblHandling.Text = "Handling";
-            this.lblHandling.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmEditor
             // 
@@ -1558,8 +1698,6 @@
             this.Controls.Add(this.btnEditorSave);
             this.Controls.Add(this.btnEditorBack);
             this.Controls.Add(this.lblCarEditor);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(640, 446);
@@ -1582,15 +1720,20 @@
             this.tabTuning.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numTuningStage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTrkCover)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBorder2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSeperator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSeperator2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trkHandling)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trkPower)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBackground)).EndInit();
+            this.tabLicensePlate.ResumeLayout(false);
+            this.tabLicensePlate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picTemp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWhite2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLicensePlate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCarPreview)).EndInit();
             this.pnlColour.ResumeLayout(false);
             this.tblColours.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picBorder2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1613,6 +1756,7 @@
          public System.Windows.Forms.TabPage tabPlateFrame;
          public System.Windows.Forms.TabPage tabNeons;
          public System.Windows.Forms.TabPage tabTuning;
+         public System.Windows.Forms.TabPage tabLicensePlate;
         public System.Windows.Forms.ListView lstAero;
         private System.Windows.Forms.ImageList aeroList;
         public System.Windows.Forms.ListView lstWing;
@@ -1631,16 +1775,24 @@
         private System.Windows.Forms.ImageList plateFrameList;
         public System.Windows.Forms.ListView lstNeons;
         private System.Windows.Forms.ImageList neonsList;
+        internal System.Windows.Forms.TextBox txtNum2;
+        internal System.Windows.Forms.ComboBox cmbPrefecture;
+        internal System.Windows.Forms.TextBox txtNum1;
+        internal System.Windows.Forms.PictureBox picLicensePlate;
+        private System.Windows.Forms.PictureBox picWhite2;
         private System.Windows.Forms.PictureBox picCarPreview;
+        public System.Windows.Forms.Label lblHandling;
         public System.Windows.Forms.Label lblPower;
         private System.Windows.Forms.PictureBox picTrkCover;
         public System.Windows.Forms.TrackBar trkHandling;
         public System.Windows.Forms.TrackBar trkPower;
+        private System.Windows.Forms.PictureBox picTemp;
         public System.Windows.Forms.Label lblTuningStage;
         private System.Windows.Forms.NumericUpDown numTuningStage;
         private System.Windows.Forms.PictureBox picSeperator2;
         private System.Windows.Forms.PictureBox picSeperator1;
         private System.Windows.Forms.PictureBox picBackground;
+        private System.Windows.Forms.PictureBox picBorder2;
         private System.Windows.Forms.Label lblHP;
         private System.Windows.Forms.Panel pnlColour;
         private System.Windows.Forms.TableLayoutPanel tblColours;
@@ -1657,7 +1809,6 @@
         private System.Windows.Forms.Button btnColour10;
         public System.Windows.Forms.ListView lstCustomColour;
         private System.Windows.Forms.ImageList customColourList;
-        private System.Windows.Forms.PictureBox picBorder2;
-        public System.Windows.Forms.Label lblHandling;
+        private System.Windows.Forms.Label label1;
     }
 }

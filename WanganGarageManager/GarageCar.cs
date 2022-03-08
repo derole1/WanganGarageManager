@@ -78,7 +78,7 @@ namespace WanganGarageManager
             unk1 = data[0x86];
             unk2 = data[0x87];
             plateFrameColour = 0x00;
-            numberPlateNumber = BitConverter.ToUInt16(data, 0x8C);
+            numberPlateNumber = BitConverter.ToUInt16(data, 0xA0);
 
             power = data[0xAC];
             handling = data[0xB8];
@@ -95,6 +95,7 @@ namespace WanganGarageManager
 
         public void SaveCar()
         {
+
             data[0x28] = numberPlatePrefecture;
             data[0x34] = car;
 
@@ -119,7 +120,7 @@ namespace WanganGarageManager
             data[0x86] = unk1;
             data[0x87] = unk2;
             data[0x00] = plateFrameColour;
-            InsertBytesIntoBuffer(data, BitConverter.GetBytes(numberPlateNumber), 0x8C);
+            InsertBytesIntoBuffer(data, BitConverter.GetBytes(numberPlateNumber), 0xA0);
 
             data[0xAC] = power;
             data[0xB8] = handling;
@@ -325,7 +326,10 @@ namespace WanganGarageManager
             editor.trkHandling.Value = handling;
 
             string number = numberPlateNumber.ToString().PadLeft(4, '0');
+            editor.txtNum1.Text = new string(number.Take(2).ToArray());
+            editor.txtNum2.Text = new string(number.Skip(2).ToArray());
 
+            editor.cmbPrefecture.SelectedIndex = numberPlatePrefecture;
 
             Application.DoEvents();
             hasSaved = true;

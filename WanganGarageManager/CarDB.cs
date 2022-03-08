@@ -392,9 +392,9 @@ new Color[] {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Col
             db.Add(0x4E, "Toyota Celica");
             db.Add(0x4F, "Toyota 2000GT");
             db.Add(0x50, "Toyota 2000GT");
-            db.Add(0x51, "Nissan R34");
+            db.Add(0x51, "BMW Z4 sDrive35is (E89)");
             db.Add(0x52, "BMW M3");
-            db.Add(0x53, "CRASH");
+            db.Add(0x53, "Camaro Z28");
             db.Add(0x54, "Corvette Stingray C2");
             db.Add(0x55, "Mazda Miata NA");
             db.Add(0x56, "Mazda Savanna");
@@ -424,7 +424,7 @@ new Color[] {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Col
             db.Add(0x6E, "Audi RS4");
             db.Add(0x6F, "Dodge Viper");
             db.Add(0x70, "Dodge Charger");
-            db.Add(0x71, "CRASH (Wheelless GTR)");
+            db.Add(0x71, "SUBARU  LEVORG 2.0GT-S EyeSight (VMG)");
             db.Add(0x73, "BMW 2002 TURBO");
             db.Add(0x72, "BMW M6 Gran Coupe");
             db.Add(0x74, "MAZDA ROADSTER ND");
@@ -442,6 +442,7 @@ new Color[] {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Col
             db.Add(0x7D, "Lamborghini Miura P400S");
             db.Add(0x85, "NISSAN SILVIA K's");
             db.Add(0x76, "Nissan GTR35 NISMO");
+            db.Add(0x78, "RUF RCT");
         }
 
         public static string GetCarName(byte id)

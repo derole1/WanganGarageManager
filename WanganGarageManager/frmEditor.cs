@@ -29,6 +29,7 @@ namespace WanganGarageManager
             PlateFrame = 8,
             Neons = 9,
             Tuning = 10,
+            LicensePlate = 11
         }
 
         GarageCar car;
@@ -56,8 +57,10 @@ namespace WanganGarageManager
                 {
                     car.inEditor = false;
                     car.LoadCar();
-                } else { e.Cancel = true; }
-            } else { car.LoadCar(); car.inEditor = false; }
+                }
+                else { e.Cancel = true; }
+            }
+            else { car.LoadCar(); car.inEditor = false; }
         }
 
         private void btnEditorBack_Click(object sender, EventArgs e)
@@ -69,7 +72,8 @@ namespace WanganGarageManager
                     car.confirmedDiscard = true;
                     this.Close();
                 }
-            } else { this.Close(); }
+            }
+            else { this.Close(); }
         }
 
         private void lstAero_SelectedIndexChanged(object sender, EventArgs e)
@@ -154,6 +158,7 @@ namespace WanganGarageManager
 
         private void cmbPrefecture_SelectedIndexChanged(object sender, EventArgs e)
         {
+            car.UpdatePlatePrefecture(cmbPrefecture.SelectedIndex);
         }
 
         private void txtNum1_TextChanged(object sender, EventArgs e)
@@ -171,10 +176,14 @@ namespace WanganGarageManager
 
         private void txtNum1_Leave(object sender, EventArgs e)
         {
+            txtNum1.Text = txtNum1.Text.PadLeft(2, '0');
+            car.UpdatePlate(ParseLicensePlate(txtNum1.Text, txtNum2.Text));
         }
 
         private void txtNum2_Leave(object sender, EventArgs e)
         {
+            txtNum2.Text = txtNum2.Text.PadLeft(2, '0');
+            car.UpdatePlate(ParseLicensePlate(txtNum1.Text, txtNum2.Text));
         }
 
         private void trkPower_Scroll(object sender, EventArgs e)
@@ -310,6 +319,11 @@ namespace WanganGarageManager
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

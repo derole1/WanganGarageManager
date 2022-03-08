@@ -333,6 +333,10 @@
             this.carPreviews.Images.SetKeyName(114, "80.png");
             this.carPreviews.Images.SetKeyName(115, "85.png");
             this.carPreviews.Images.SetKeyName(116, "83.png");
+            this.carPreviews.Images.SetKeyName(117, "71.png");
+            this.carPreviews.Images.SetKeyName(118, "53.png");
+            this.carPreviews.Images.SetKeyName(119, "51.png");
+            this.carPreviews.Images.SetKeyName(120, "21.png");
             // 
             // lblSelectCar
             // 
