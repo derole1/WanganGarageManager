@@ -43,7 +43,7 @@ namespace WanganGarageManager
 
         public byte power;
         public byte handling;
-        public byte level;
+        public byte rank;
 
         public GarageCar(string filename)
         {
@@ -69,7 +69,7 @@ namespace WanganGarageManager
             rearWing = data[0x58];
             sideMirrors = data[0x5C];
             bodySticker = data[0x60];
-            japanSticker = data[0x60];
+            japanSticker = data[0xA4];
             stickerColour = data[0x64];
 
             carbonTrunk = data[0x94];
@@ -83,13 +83,13 @@ namespace WanganGarageManager
             power = data[0xAC];
             handling = data[0xB8];
 
-            level = data[0xBC];
+            rank = data[0xBC];
 
             Console.WriteLine("State of save: rearWing={0}, sideMirrors={1}, bodySticker={2}, japanSticker={3}, stickerColour={4}, carbonTrunk={5}, numberPlateFrame={6}" +
                 ", specialPlateFrame={7}, unk1={8}, unk2={9}, plateFrameColour={10}, numberPlateNumber={11}, bodyKit={12}, hood={13}" +
-                ", carColour={14}, wheels={15}, wheelColour={16}, numberPlatePrefecture={17}, car={18}"
+                ", carColour={14}, wheels={15}, wheelColour={16}, numberPlatePrefecture={17}, car={18}, rank={19} "
                 , rearWing, sideMirrors, bodySticker, japanSticker, stickerColour, carbonTrunk, numberPlateFrame, specialPlateFrame, unk1, unk2, plateFrameColour
-                , numberPlateNumber, bodyKit, hood, carColour, wheels, wheelColour, numberPlatePrefecture, car);
+                , numberPlateNumber, bodyKit, hood, carColour, wheels, wheelColour, numberPlatePrefecture, car, rank);
             isLoaded = true;
         }
 
@@ -125,7 +125,7 @@ namespace WanganGarageManager
             data[0xAC] = power;
             data[0xB8] = handling;
 
-            data[0xBC] = level;
+            data[0xBC] = rank;
 
             File.WriteAllBytes(filename, data);
             hasSaved = true;
@@ -135,6 +135,12 @@ namespace WanganGarageManager
         {
             File.Delete(filename);
             Console.WriteLine("Deleted {0}", filename);
+        }
+
+        public void RenameCar()
+        {
+            File.Move(filename, "custom.car");
+            Console.WriteLine("Rename {0}", filename);
         }
 
         public void UpdateAeroKit(int value)
@@ -281,6 +287,15 @@ namespace WanganGarageManager
             }
         }
 
+        public void Updatelevel(int value)
+        {
+            if (rank != value)
+            {
+                rank = (byte)value;
+                hasSaved = false;
+            }
+        }
+
         public void UpdatePowerHandling(int value1, int value2)
         {
             if (power != value1 || handling != value2)
@@ -330,6 +345,8 @@ namespace WanganGarageManager
             editor.txtNum2.Text = new string(number.Skip(2).ToArray());
 
             editor.cmbPrefecture.SelectedIndex = numberPlatePrefecture;
+            editor.cmdlevel.SelectedIndex = rank;
+            //editor.Rankimg.Image = 
 
             Application.DoEvents();
             hasSaved = true;

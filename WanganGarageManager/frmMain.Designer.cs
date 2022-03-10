@@ -65,7 +65,7 @@
             menuAddCar.Enabled = false;
             menuAddCar.Name = "menuAddCar";
             menuAddCar.ShowShortcutKeys = false;
-            menuAddCar.Size = new System.Drawing.Size(139, 22);
+            menuAddCar.Size = new System.Drawing.Size(180, 22);
             menuAddCar.Text = "Add car(s)";
             menuAddCar.Visible = false;
             // 
@@ -121,9 +121,9 @@
             this.lblNoCars.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.lblNoCars.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoCars.ForeColor = System.Drawing.Color.DimGray;
-            this.lblNoCars.Location = new System.Drawing.Point(41, 35);
+            this.lblNoCars.Location = new System.Drawing.Point(25, 35);
             this.lblNoCars.Name = "lblNoCars";
-            this.lblNoCars.Size = new System.Drawing.Size(744, 363);
+            this.lblNoCars.Size = new System.Drawing.Size(766, 363);
             this.lblNoCars.TabIndex = 1;
             this.lblNoCars.Text = "No cars have been created.\r\nPerform a race in a car of your choice for it to show" +
     " up here.";
@@ -202,13 +202,13 @@
             menuAddCar,
             this.menuDeleteCar});
             this.lstContextMenu.Name = "lstContextMenu";
-            this.lstContextMenu.Size = new System.Drawing.Size(140, 48);
+            this.lstContextMenu.Size = new System.Drawing.Size(181, 70);
             this.lstContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.lstContextMenu_Opening);
             // 
             // menuDeleteCar
             // 
             this.menuDeleteCar.Name = "menuDeleteCar";
-            this.menuDeleteCar.Size = new System.Drawing.Size(139, 22);
+            this.menuDeleteCar.Size = new System.Drawing.Size(180, 22);
             this.menuDeleteCar.Text = "Delete car(s)";
             this.menuDeleteCar.Click += new System.EventHandler(this.menuDeleteCar_Click);
             // 
@@ -337,6 +337,7 @@
             this.carPreviews.Images.SetKeyName(118, "53.png");
             this.carPreviews.Images.SetKeyName(119, "51.png");
             this.carPreviews.Images.SetKeyName(120, "21.png");
+            this.carPreviews.Images.SetKeyName(121, "78.png");
             // 
             // lblSelectCar
             // 

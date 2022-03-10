@@ -29,7 +29,8 @@ namespace WanganGarageManager
             PlateFrame = 8,
             Neons = 9,
             Tuning = 10,
-            LicensePlate = 11
+            LicensePlate = 11,
+            level = 12
         }
 
         GarageCar car;
@@ -159,6 +160,13 @@ namespace WanganGarageManager
         private void cmbPrefecture_SelectedIndexChanged(object sender, EventArgs e)
         {
             car.UpdatePlatePrefecture(cmbPrefecture.SelectedIndex);
+        }
+
+        private void cmdlevel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            car.Updatelevel(cmdlevel.SelectedIndex);
+            //string selectedItem = cmdlevel.SelectedItem.ToString();
+            //Rankimg.Image = System.Drawing.Image.FromFile (selectedItem);
         }
 
         private void txtNum1_TextChanged(object sender, EventArgs e)
@@ -324,6 +332,26 @@ namespace WanganGarageManager
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabTuning_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picLicensePlate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabLicensePlate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Rankimg_Click(object sender, EventArgs e)
         {
 
         }
