@@ -1,2 +1,5 @@
-5DX+のデータエディターです。まだいくつかの小さな問題があります。
-This is the data editor for 5DX+. There are still a few minor issues.
+# WanganGarageManager
+An editor for wmmt5 saves. Allows you to edit various visual and performance parts.
+
+Please feel free to make pull requests with new features! :D
+You are free to fork and make your own versions according to the GPL v3 license.
