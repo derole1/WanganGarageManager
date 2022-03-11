@@ -79,7 +79,7 @@ namespace WanganGarageManager
                     }
                     if (Directory.Exists("sv"))
                     {
-                        foreach (string file in Directory.GetFiles("sv", "*.car", SearchOption.AllDirectories))
+                        foreach (string file in Directory.GetFiles("sv", "000000*.bin", SearchOption.AllDirectories))
                         {
                             GarageCar car = new GarageCar(file);
                             car.LoadCar();
