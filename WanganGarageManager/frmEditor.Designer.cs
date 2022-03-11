@@ -1522,6 +1522,7 @@
             // 
             // Rankimg
             // 
+            this.Rankimg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Rankimg.ErrorImage")));
             this.Rankimg.Image = global::WanganGarageManager.Properties.Resources.N;
             this.Rankimg.Location = new System.Drawing.Point(314, 46);
             this.Rankimg.Name = "Rankimg";
