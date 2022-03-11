@@ -165,8 +165,8 @@ namespace WanganGarageManager
         private void cmdlevel_SelectedIndexChanged(object sender, EventArgs e)
         {
             car.Updatelevel(cmdlevel.SelectedIndex);
-            //string selectedItem = cmdlevel.SelectedItem.ToString();
-            //Rankimg.Image = System.Drawing.Image.FromFile (selectedItem);
+            string selectedItem = cmdlevel.SelectedItem.ToString();
+            Rankimg.Image = (Image)Properties.Resources.ResourceManager.GetObject(selectedItem, Properties.Resources.Culture);
         }
 
         private void txtNum1_TextChanged(object sender, EventArgs e)

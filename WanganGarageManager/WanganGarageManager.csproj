@@ -119,10 +119,64 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\A1.png" />
+    <None Include="Resources\A2.png" />
+    <None Include="Resources\A3.png" />
+    <None Include="Resources\A4.png" />
+    <None Include="Resources\A5.png" />
+    <None Include="Resources\A6.png" />
+    <None Include="Resources\A7.png" />
+    <None Include="Resources\A8.png" />
+    <None Include="Resources\A9.png" />
+    <None Include="Resources\B1.png" />
+    <None Include="Resources\B2.png" />
+    <None Include="Resources\B3.png" />
+    <None Include="Resources\B4.png" />
+    <None Include="Resources\B5.png" />
+    <None Include="Resources\B6.png" />
+    <None Include="Resources\B7.png" />
+    <None Include="Resources\B8.png" />
+    <None Include="Resources\B9.png" />
+    <None Include="Resources\C1.png" />
+    <None Include="Resources\C2.png" />
+    <None Include="Resources\C3.png" />
+    <None Include="Resources\C4.png" />
+    <None Include="Resources\C5.png" />
+    <None Include="Resources\C6.png" />
+    <None Include="Resources\C7.png" />
+    <None Include="Resources\C8.png" />
+    <None Include="Resources\C9.png" />
+    <None Include="Resources\N.png" />
+    <None Include="Resources\S1.png" />
+    <None Include="Resources\S2.png" />
+    <None Include="Resources\S3.png" />
+    <None Include="Resources\S4.png" />
+    <None Include="Resources\S5.png" />
+    <None Include="Resources\S6.png" />
+    <None Include="Resources\S7.png" />
+    <None Include="Resources\S8.png" />
+    <None Include="Resources\S9.png" />
+    <None Include="Resources\SS1.png" />
+    <None Include="Resources\SS2.png" />
+    <None Include="Resources\SS3.png" />
+    <None Include="Resources\SS4.png" />
+    <None Include="Resources\SS5.png" />
+    <None Include="Resources\SS6.png" />
+    <None Include="Resources\SS7.png" />
+    <None Include="Resources\SS8.png" />
+    <None Include="Resources\SS9.png" />
+    <None Include="Resources\SSS1.png" />
+    <None Include="Resources\SSS2.png" />
+    <None Include="Resources\SSS3.png" />
+    <None Include="Resources\SSS4.png" />
+    <None Include="Resources\SSS5.png" />
+    <None Include="Resources\SSS6.png" />
+    <None Include="Resources\SSS7.png" />
+    <None Include="Resources\SSS8.png" />
+    <None Include="Resources\SSS9.png" />
+    <None Include="Resources\SSSS.png" />
     <Content Include="wgmlogo.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
