@@ -1,4 +1,3 @@
-# WanganGarageManager
 5DX+のデータエディターです。
 まだいくつかの小さな問題があります。
 
