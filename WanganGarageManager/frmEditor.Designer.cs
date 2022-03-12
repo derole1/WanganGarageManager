@@ -1548,7 +1548,7 @@ namespace WanganGarageManager
             this.cmdlevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmdlevel.FormattingEnabled = true;
             this.cmdlevel.Items.AddRange(new object[] {
-            "ランク割り当てなし",
+            "no rank",
             "N",
             "C9",
             "C8",
