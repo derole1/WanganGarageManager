@@ -43,6 +43,8 @@
             this.clmFileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuDeleteCar = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuforceCarSelect = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFCSOFF = new System.Windows.Forms.ToolStripMenuItem();
             this.carPreviews = new System.Windows.Forms.ImageList(this.components);
             this.lblSelectCar = new System.Windows.Forms.Label();
             this.tabSettings = new System.Windows.Forms.TabPage();
@@ -65,9 +67,10 @@
             menuAddCar.Enabled = false;
             menuAddCar.Name = "menuAddCar";
             menuAddCar.ShowShortcutKeys = false;
-            menuAddCar.Size = new System.Drawing.Size(180, 22);
-            menuAddCar.Text = "Add car(s)";
+            menuAddCar.Size = new System.Drawing.Size(122, 22);
+            menuAddCar.Text = "車を追加";
             menuAddCar.Visible = false;
+            menuAddCar.Click += new System.EventHandler(this.menuAddCar_Click);
             // 
             // menuSwitcher
             // 
@@ -200,17 +203,33 @@
             // 
             this.lstContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             menuAddCar,
-            this.menuDeleteCar});
+            this.menuDeleteCar,
+            this.menuforceCarSelect,
+            this.menuFCSOFF});
             this.lstContextMenu.Name = "lstContextMenu";
-            this.lstContextMenu.Size = new System.Drawing.Size(181, 70);
+            this.lstContextMenu.Size = new System.Drawing.Size(123, 92);
             this.lstContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.lstContextMenu_Opening);
             // 
             // menuDeleteCar
             // 
             this.menuDeleteCar.Name = "menuDeleteCar";
-            this.menuDeleteCar.Size = new System.Drawing.Size(180, 22);
-            this.menuDeleteCar.Text = "Delete car(s)";
+            this.menuDeleteCar.Size = new System.Drawing.Size(122, 22);
+            this.menuDeleteCar.Text = "車を削除";
             this.menuDeleteCar.Click += new System.EventHandler(this.menuDeleteCar_Click);
+            // 
+            // menuforceCarSelect
+            // 
+            this.menuforceCarSelect.Name = "menuforceCarSelect";
+            this.menuforceCarSelect.Size = new System.Drawing.Size(122, 22);
+            this.menuforceCarSelect.Text = "強制固定";
+            this.menuforceCarSelect.Click += new System.EventHandler(this.forceCarSelectToolStripMenuItem_Click);
+            // 
+            // menuFCSOFF
+            // 
+            this.menuFCSOFF.Name = "menuFCSOFF";
+            this.menuFCSOFF.Size = new System.Drawing.Size(122, 22);
+            this.menuFCSOFF.Text = "固定解除";
+            this.menuFCSOFF.Click += new System.EventHandler(this.menuFCSOFF_Click);
             // 
             // carPreviews
             // 
@@ -532,6 +551,8 @@ bool s = true;
         public System.Windows.Forms.Button btnSettings;
         public System.Windows.Forms.Label lblGarageView;
         public System.Windows.Forms.CheckBox chkPowerHandling;
+        private System.Windows.Forms.ToolStripMenuItem menuforceCarSelect;
+        private System.Windows.Forms.ToolStripMenuItem menuFCSOFF;
     }
 }
 

@@ -137,10 +137,16 @@ namespace WanganGarageManager
             Console.WriteLine("Deleted {0}", filename);
         }
 
-        public void RenameCar()
+        public void FCSCar()
         {
-            File.Move(filename, "custom.car");
-            Console.WriteLine("Rename {0}", filename);
+            string newFilename = @".\OpenParrot_Cars\custom.car";
+            File.Copy(filename, newFilename);
+        }
+
+        public void FCSOFFCar()
+        {
+            File.Delete(@".\OpenParrot_Cars\custom.car");
+            Console.WriteLine("Deleted {0}" + "custom.car");
         }
 
         public void UpdateAeroKit(int value)

@@ -165,10 +165,24 @@ namespace WanganGarageManager
             if (lstGarage.SelectedIndices.Count < 1)
             {
                 menuDeleteCar.Visible = false;
+                menuforceCarSelect.Visible = false;
+                menuFCSOFF.Visible = false;
             }
             else
             {
                 menuDeleteCar.Visible = true;
+
+                string file = @".\OpenParrot_Cars\custom.car";
+                if (System.IO.File.Exists(file))
+                {
+                    menuforceCarSelect.Visible = false;
+                    menuFCSOFF.Visible = true;
+                }
+                else
+                {
+                    menuforceCarSelect.Visible = true;
+                    menuFCSOFF.Visible = false;
+                }
             }
         }
 
@@ -230,5 +244,35 @@ namespace WanganGarageManager
         {
 
         }
+
+        private void menuAddCar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void forceCarSelectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("この車を固定しますか？", "本当ですか？", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                for (int i = 0; i < lstGarage.SelectedIndices.Count; i++)
+                {
+                    cars[lstGarage.SelectedIndices[i]].FCSCar();
+                }
+                menuSwitcher_SelectedIndexChanged(null, null);
+            }
+        }
+
+        private void menuFCSOFF_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("固定を解除しますか？", "本当ですか？", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                for (int i = 0; i < lstGarage.SelectedIndices.Count; i++)
+                {
+                    cars[lstGarage.SelectedIndices[i]].FCSOFFCar();
+                }
+                menuSwitcher_SelectedIndexChanged(null, null);
+            }
+        }
+
     }
 }
