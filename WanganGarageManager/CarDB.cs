@@ -16,7 +16,7 @@ namespace WanganGarageManager
         public static byte[] stickers = new byte[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 35, 37, 38, 41, 33, 36, 39, 44, 40, 42, 50, 49, 45, 46, 47, 51 };
         public static byte[] wing = new byte[] { 0, 9, 1, 2, 3, 4, 5, 6 };
 
-        public static string[] power = new string[] { "---馬力/B", "360馬力/B", "400馬力/B", "420馬力/B", "450馬力/B", "470馬力/B", "500馬力/B", "530馬力/B", "550馬力/B", "580馬力/B", "600馬力/HG", "620馬力/HG", "640馬力/HG", "660馬力/G", "680馬力/G", "700馬力/G", "720馬力/B", "740馬力/B", "760馬力/D", "780馬力/D", "800馬力/D", "815馬力/DG", "830馬力/DG" };
+        public static string[] power = new string[] { "---/B", "360/B", "400/B", "420/B", "450/B", "470/B", "500/B", "530/B", "550/B", "580/B", "600/HG", "620/HG", "640/HG", "660/G", "680/G", "700/G", "720/B", "740/B", "760/D", "780/D", "800/D", "815/DG", "830/DG" };
 
         public static string[] defaultPower = new string[] {
             "300",
@@ -105,7 +105,7 @@ new Color[] {Color.Silver, Color.Brown, Color.Black},
 new Color[] {Color.Silver, Color.Gray, Color.Gray},
 new Color[] {Color.Silver, Color.Black, Color.White},
 new Color[] {Color.Silver, Color.Black, Color.Silver, Color.Red, Color.White},
-new Color[] {Color.White, Color.Brown, Color.Gold, Color.Red, Color.Black, Color.Black},
+new Color[] {Color.Transparent},
 new Color[] {Color.White, Color.Brown, Color.Gold, Color.Red, Color.Black, Color.Black},
 new Color[] {Color.Black, Color.Silver, Color.Brown, Color.White, Color.Black},
 new Color[] {Color.Silver, Color.Brown, Color.Red, Color.Black},
@@ -350,7 +350,7 @@ new Color[] {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Col
             db.Add(0x24, "Nissan 300ZX (Z32)");
             db.Add(0x25, "Nissan 300ZX (Z31)");
             db.Add(0x26, "DUMMY");
-            db.Add(0x27, "Nissan Fairlady Z S30");
+            db.Add(0x27, "Nissan Fairlady Z S20");
             db.Add(0x28, "Nissan Silvia S15");
             db.Add(0x29, "Nissan 180SX");
             db.Add(0x2A, "Nissan Skyline 370GT");
@@ -392,9 +392,9 @@ new Color[] {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Col
             db.Add(0x4E, "Toyota Celica");
             db.Add(0x4F, "Toyota 2000GT");
             db.Add(0x50, "Toyota 2000GT");
-            db.Add(0x51, "BMW Z4 sDrive35is (E89)");
+            db.Add(0x51, "Nissan R34");
             db.Add(0x52, "BMW M3");
-            db.Add(0x53, "Camaro Z28");
+            db.Add(0x53, "CRASH");
             db.Add(0x54, "Corvette Stingray C2");
             db.Add(0x55, "Mazda Miata NA");
             db.Add(0x56, "Mazda Savanna");
@@ -424,25 +424,22 @@ new Color[] {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Col
             db.Add(0x6E, "Audi RS4");
             db.Add(0x6F, "Dodge Viper");
             db.Add(0x70, "Dodge Charger");
-            db.Add(0x71, "SUBARU  LEVORG 2.0GT-S EyeSight (VMG)");
-            db.Add(0x73, "BMW 2002 TURBO");
-            db.Add(0x72, "BMW M6 Gran Coupe");
-            db.Add(0x74, "MAZDA ROADSTER ND");
-            db.Add(0x75, "NISSAN LAUREL 25 CLUB－S");
-            db.Add(0x79, "TOYOTA MARKII TOURER V");
-            db.Add(0x7A, "BMW MINI Cooper S Crossover");
-            db.Add(0x80, "HONDA NSX");
-            db.Add(0x81, "HONDA NSX-R");
-            db.Add(0x7F, "HONDA New NSX");
-            db.Add(0x83, "HONDA S2000");
-            db.Add(0x82, "HONDA S660");
-            db.Add(0x7B, "Lamborghini Aventador LP700-4");
-            db.Add(0x7C, "Lamborghini Countach LP400");
-            db.Add(0x7E, "Lamborghini Diablo VT");
-            db.Add(0x7D, "Lamborghini Miura P400S");
-            db.Add(0x85, "NISSAN SILVIA K's");
-            db.Add(0x76, "Nissan GTR35 NISMO");
-            db.Add(0x78, "RUF RCT");
+            db.Add(0x71, "CRASH (Wheelless GTR)");
+            db.Add(0x72, "Mazda Miata (Big wheels)");
+            db.Add(0x73, "DUMMY");
+            db.Add(0x74, "DUMMY");
+            db.Add(0x75, "DUMMY");
+            db.Add(0x76, "DUMMY");
+            db.Add(0x77, "DUMMY");
+            db.Add(0x78, "DUMMY");
+            db.Add(0x79, "DUMMY");
+            db.Add(0x7A, "DUMMY");
+            db.Add(0x7B, "DUMMY");
+            db.Add(0x7C, "DUMMY");
+            db.Add(0x7D, "DUMMY");
+            db.Add(0x7E, "DUMMY");
+            db.Add(0x7F, "DUMMY");
+            db.Add(0x80, "DUMMY");
         }
 
         public static string GetCarName(byte id)

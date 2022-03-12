@@ -19,6 +19,8 @@ namespace WanganGarageManager
         public bool isLoaded = false;
         public bool confirmedDiscard = false;
 
+        public ushort ver;
+
         public byte rearWing;
         public byte sideMirrors;
         public byte bodySticker;
@@ -54,36 +56,38 @@ namespace WanganGarageManager
         {
             data = File.ReadAllBytes(filename);
 
-            numberPlatePrefecture = data[0x28];
-            car = data[0x34];
+            ver = BitConverter.ToUInt16(data, 0x00);
 
-            carColour = data[0x38];
-            customColour = data[0x3C];
-            wheels = data[0x40];
-            wheelColour = data[0x44];
-            neons = data[0x90];
+            numberPlatePrefecture = data[0x20];
+            car = data[0x2C];
 
-            bodyKit = data[0x48];
-            hood = data[0x4C];
+            carColour = data[0x30];
+            customColour = data[0x34];
+            wheels = data[0x38];
+            wheelColour = data[0x3C];
+            neons = data[0x7C];
 
-            rearWing = data[0x58];
-            sideMirrors = data[0x5C];
-            bodySticker = data[0x60];
-            japanSticker = data[0xA4];
-            stickerColour = data[0x64];
+            bodyKit = data[0x40];
+            hood = data[0x44];
 
-            carbonTrunk = data[0x94];
-            numberPlateFrame = data[0x98];
+            rearWing = data[0x50];
+            sideMirrors = data[0x54];
+            bodySticker = data[0x58];
+            japanSticker = data[0x59];
+            stickerColour = data[0x5C];
+
+            carbonTrunk = data[0x80];
+            numberPlateFrame = data[0x84];
             specialPlateFrame = data[0x85];
             unk1 = data[0x86];
             unk2 = data[0x87];
-            plateFrameColour = 0x00;
-            numberPlateNumber = BitConverter.ToUInt16(data, 0xA0);
+            plateFrameColour = data[0x8A];
+            numberPlateNumber = BitConverter.ToUInt16(data, 0x8C);
 
-            power = data[0xAC];
-            handling = data[0xB8];
+            power = data[0x98];
+            handling = data[0x9C];
 
-            rank = data[0xBC];
+            rank = data[0xA4];
 
             Console.WriteLine("State of save: rearWing={0}, sideMirrors={1}, bodySticker={2}, japanSticker={3}, stickerColour={4}, carbonTrunk={5}, numberPlateFrame={6}" +
                 ", specialPlateFrame={7}, unk1={8}, unk2={9}, plateFrameColour={10}, numberPlateNumber={11}, bodyKit={12}, hood={13}" +
@@ -95,37 +99,36 @@ namespace WanganGarageManager
 
         public void SaveCar()
         {
+            data[0x20] = numberPlatePrefecture;
+            data[0x2C] = car;
 
-            data[0x28] = numberPlatePrefecture;
-            data[0x34] = car;
+            data[0x30] = carColour;
+            data[0x34] = customColour;
+            data[0x38] = wheels;
+            data[0x3C] = wheelColour;
+            data[0x7C] = neons;
 
-            data[0x38] = carColour;
-            data[0x3C] = customColour;
-            data[0x40] = wheels;
-            data[0x44] = wheelColour;
-            data[0x90] = neons;
+            data[0x40] = bodyKit;
+            data[0x44] = hood;
 
-            data[0x48] = bodyKit;
-            data[0x4C] = hood;
+            data[0x50] = rearWing;
+            data[0x54] = sideMirrors;
+            data[0x58] = bodySticker;
+            data[0x59] = japanSticker;
+            data[0x5C] = stickerColour;
 
-            data[0x58] = rearWing;
-            data[0x5C] = sideMirrors;
-            data[0x60] = bodySticker;
-            data[0x60] = japanSticker;
-            data[0x64] = stickerColour;
-
-            data[0x94] = carbonTrunk;
-            data[0x98] = numberPlateFrame;
+            data[0x80] = carbonTrunk;
+            data[0x84] = numberPlateFrame;
             data[0x85] = specialPlateFrame;
             data[0x86] = unk1;
             data[0x87] = unk2;
-            data[0x00] = plateFrameColour;
-            InsertBytesIntoBuffer(data, BitConverter.GetBytes(numberPlateNumber), 0xA0);
+            data[0x8A] = plateFrameColour;
+            InsertBytesIntoBuffer(data, BitConverter.GetBytes(numberPlateNumber), 0x8C);
 
-            data[0xAC] = power;
-            data[0xB8] = handling;
+            data[0x98] = power;
+            data[0x9C] = handling;
 
-            data[0xBC] = rank;
+            data[0xA4] = rank;
 
             File.WriteAllBytes(filename, data);
             hasSaved = true;
@@ -428,7 +431,7 @@ namespace WanganGarageManager
             {
                 btns[i].Visible = false;
             }
-            btns[plateFrameColour].Focus();
+            btns[carColour].Focus();
         }
 
         public string GetPreviewImageName(byte id)

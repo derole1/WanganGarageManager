@@ -47,7 +47,7 @@ namespace WanganGarageManager
             UpdateHPLbl();
             colourButtons = new Button[] { btnColour1, btnColour2, btnColour3, btnColour4, btnColour5, btnColour6, btnColour7, btnColour8, btnColour9, btnColour10 };
             Localisation.UpdateEditor(this, CultureInfo.InstalledUICulture.Name);
-            partsSwitcher_SelectedIndexChanged(null, null);
+            PartsSwitcher_SelectedIndexChanged(null, null);
         }
 
         private void frmEditor_FormClosing(object sender, FormClosingEventArgs e)
@@ -244,7 +244,7 @@ namespace WanganGarageManager
             }
         }
 
-        private void partsSwitcher_SelectedIndexChanged(object sender, EventArgs e)
+        private void PartsSwitcher_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (partsSwitcher.SelectedIndex)
             {
@@ -279,7 +279,7 @@ namespace WanganGarageManager
             colourButtons[car.wheelColour].Focus();
         }
 
-        private void btnColours_Click(object sender, EventArgs e)
+        private void BtnColours_Click(object sender, EventArgs e)
         {
             switch (partsSwitcher.SelectedIndex)
             {
@@ -306,17 +306,17 @@ namespace WanganGarageManager
             }
         }
 
-        private void lstStickers_Enter(object sender, EventArgs e)
+        private void LstStickers_Enter(object sender, EventArgs e)
         {
             colourButtons[car.stickerColour].Focus();
         }
 
-        private void frmEditor_Load(object sender, EventArgs e)
+        private void FrmEditor_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://forms.gle/gfvfYvTHxcEUyruj8");
         }
@@ -346,7 +346,7 @@ namespace WanganGarageManager
 
         }
 
-        private void tabLicensePlate_Click(object sender, EventArgs e)
+        private void TabLicensePlate_Click(object sender, EventArgs e)
         {
 
         }

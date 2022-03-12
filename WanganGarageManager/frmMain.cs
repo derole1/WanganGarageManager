@@ -27,14 +27,15 @@ namespace WanganGarageManager
         {
             if (!File.Exists("wmn5r.exe"))
             {
-                MessageBox.Show("ガレージマネージャーが正しいディレクトリに配置されていないので、ゲームファイルと一緒に、wmn5r.exeがある場所に配置してください。", "ガレージマネージャーが間違ったフォルダーにあります！", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The garage manager has not been placed in the correct directory, please place it with your game files, where wmn5r.exe is.", "Wangan garage manager is in the wrong folder!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(0);
             }
             InitializeComponent();
             Localisation.InitMain();
             Localisation.InitEditor();
             CarDB.InitDB();
-            lblCredit.Text = "Wangan Garage Manager5DX Plus\nVersion 0.9";
+            lblCredit.Text = "Wangan Garage Manager\nVersion " + Application.ProductVersion.Split('.')[0];
+            cmbVer.SelectedIndex = 0;
             Localisation.UpdateMain(this, CultureInfo.InstalledUICulture.Name);
             menuSwitcher_SelectedIndexChanged(null, null);
         }
@@ -61,9 +62,12 @@ namespace WanganGarageManager
                         {
                             GarageCar car = new GarageCar(file);
                             car.LoadCar();
-                            lstGarage.Items.Add(car.GetListViewItem(carPreviews));
-                            cars.Add(car);
-                            lblNoCars.Visible = false;
+                            if (GameVersion.versions.ContainsKey(car.ver) && cmbVer.SelectedIndex == GameVersion.versions[car.ver])
+                            {
+                                lstGarage.Items.Add(car.GetListViewItem(carPreviews));
+                                cars.Add(car);
+                                lblNoCars.Visible = false;
+                            }
                         }
                     }
                     if (Directory.Exists("Teknoparrot_Cars"))
@@ -72,20 +76,26 @@ namespace WanganGarageManager
                         {
                             GarageCar car = new GarageCar(file);
                             car.LoadCar();
-                            lstGarage.Items.Add(car.GetListViewItem(carPreviews));
-                            cars.Add(car);
-                            lblNoCars.Visible = false;
+                            if (GameVersion.versions.ContainsKey(car.ver) && cmbVer.SelectedIndex == GameVersion.versions[car.ver])
+                            {
+                                lstGarage.Items.Add(car.GetListViewItem(carPreviews));
+                                cars.Add(car);
+                                lblNoCars.Visible = false;
+                            }
                         }
                     }
                     if (Directory.Exists("sv"))
                     {
-                        foreach (string file in Directory.GetFiles("sv", "000000*.bin", SearchOption.AllDirectories))
+                        foreach (string file in Directory.GetFiles("sv", "*.car", SearchOption.AllDirectories))
                         {
                             GarageCar car = new GarageCar(file);
                             car.LoadCar();
-                            lstGarage.Items.Add(car.GetListViewItem(carPreviews));
-                            cars.Add(car);
-                            lblNoCars.Visible = false;
+                            if (GameVersion.versions.ContainsKey(car.ver) && cmbVer.SelectedIndex == GameVersion.versions[car.ver])
+                            {
+                                lstGarage.Items.Add(car.GetListViewItem(carPreviews));
+                                cars.Add(car);
+                                lblNoCars.Visible = false;
+                            }
                         }
                     }
                     break;
@@ -150,7 +160,7 @@ namespace WanganGarageManager
 
         private void menuDeleteCar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("この車を削除してもよろしいですか？ 復元することはできません。", "本当ですか？", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure you want to permanently delete these car(s)? You will not be able to recover them.", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 for (int i=0; i < lstGarage.SelectedIndices.Count; i++)
                 {
@@ -165,24 +175,10 @@ namespace WanganGarageManager
             if (lstGarage.SelectedIndices.Count < 1)
             {
                 menuDeleteCar.Visible = false;
-                menuforceCarSelect.Visible = false;
-                menuFCSOFF.Visible = false;
             }
             else
             {
                 menuDeleteCar.Visible = true;
-
-                string file = @".\OpenParrot_Cars\custom.car";
-                if (System.IO.File.Exists(file))
-                {
-                    menuforceCarSelect.Visible = false;
-                    menuFCSOFF.Visible = true;
-                }
-                else
-                {
-                    menuforceCarSelect.Visible = true;
-                    menuFCSOFF.Visible = false;
-                }
             }
         }
 
@@ -227,52 +223,12 @@ namespace WanganGarageManager
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://forms.gle/gfvfYvTHxcEUyruj8");
+            Process.Start("https://github.com/derole1/WanganGarageManager");
         }
 
-        private void About_Click(object sender, EventArgs e)
+        private void cmbVer_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            menuSwitcher_SelectedIndexChanged(null, null);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCredit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuAddCar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void forceCarSelectToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("この車を固定しますか？", "本当ですか？", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-            {
-                for (int i = 0; i < lstGarage.SelectedIndices.Count; i++)
-                {
-                    cars[lstGarage.SelectedIndices[i]].FCSCar();
-                }
-                menuSwitcher_SelectedIndexChanged(null, null);
-            }
-        }
-
-        private void menuFCSOFF_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("固定を解除しますか？", "本当ですか？", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-            {
-                for (int i = 0; i < lstGarage.SelectedIndices.Count; i++)
-                {
-                    cars[lstGarage.SelectedIndices[i]].FCSOFFCar();
-                }
-                menuSwitcher_SelectedIndexChanged(null, null);
-            }
-        }
-
     }
 }
