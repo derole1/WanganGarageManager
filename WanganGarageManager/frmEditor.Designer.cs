@@ -1,4 +1,4 @@
-﻿namespace WanganGarageManager
+namespace WanganGarageManager
 {
     partial class frmEditor
     {
@@ -1522,7 +1522,7 @@
             // 
             // Rankimg
             // 
-            this.Rankimg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Rankimg.ErrorImage")));
+            this.Rankimg.ErrorImage = null;
             this.Rankimg.Image = global::WanganGarageManager.Properties.Resources.N;
             this.Rankimg.Location = new System.Drawing.Point(314, 46);
             this.Rankimg.Name = "Rankimg";
@@ -1537,11 +1537,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(331, 3);
+            this.label2.Location = new System.Drawing.Point(321, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 37);
+            this.label2.Size = new System.Drawing.Size(165, 37);
             this.label2.TabIndex = 1;
-            this.label2.Text = "階級を選択";
+            this.label2.Text = "Select Rank";
             // 
             // cmdlevel
             // 
