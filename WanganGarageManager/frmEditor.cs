@@ -54,7 +54,7 @@ namespace WanganGarageManager
         {
             if (!car.hasSaved && !car.confirmedDiscard)
             {
-                if (MessageBox.Show("変更内容は保存されていません。本当に終了しますか？", "終了しますか？", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                if (MessageBox.Show("You have unsaved changes! Are you sure you want to go back without saving?", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                 {
                     car.inEditor = false;
                     car.LoadCar();
@@ -68,7 +68,7 @@ namespace WanganGarageManager
         {
             if (!car.hasSaved)
             {
-                if (MessageBox.Show("変更内容は保存されていません。本当に終了しますか？", "終了しますか？", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                if (MessageBox.Show("You have unsaved changes! Are you sure you want to go back without saving?", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                 {
                     car.confirmedDiscard = true;
                     this.Close();
