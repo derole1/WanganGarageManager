@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +29,8 @@ namespace WanganGarageManager
             PlateFrame = 8,
             Neons = 9,
             Tuning = 10,
-            LicensePlate = 11
+            LicensePlate = 11,
+            level = 12
         }
 
         GarageCar car;
@@ -46,7 +47,7 @@ namespace WanganGarageManager
             UpdateHPLbl();
             colourButtons = new Button[] { btnColour1, btnColour2, btnColour3, btnColour4, btnColour5, btnColour6, btnColour7, btnColour8, btnColour9, btnColour10 };
             Localisation.UpdateEditor(this, CultureInfo.InstalledUICulture.Name);
-            partsSwitcher_SelectedIndexChanged(null, null);
+            PartsSwitcher_SelectedIndexChanged(null, null);
         }
 
         private void frmEditor_FormClosing(object sender, FormClosingEventArgs e)
@@ -57,8 +58,10 @@ namespace WanganGarageManager
                 {
                     car.inEditor = false;
                     car.LoadCar();
-                } else { e.Cancel = true; }
-            } else { car.LoadCar(); car.inEditor = false; }
+                }
+                else { e.Cancel = true; }
+            }
+            else { car.LoadCar(); car.inEditor = false; }
         }
 
         private void btnEditorBack_Click(object sender, EventArgs e)
@@ -70,7 +73,8 @@ namespace WanganGarageManager
                     car.confirmedDiscard = true;
                     this.Close();
                 }
-            } else { this.Close(); }
+            }
+            else { this.Close(); }
         }
 
         private void lstAero_SelectedIndexChanged(object sender, EventArgs e)
@@ -158,18 +162,19 @@ namespace WanganGarageManager
             car.UpdatePlatePrefecture(cmbPrefecture.SelectedIndex);
         }
 
+        private void cmdlevel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            car.Updatelevel(cmdlevel.SelectedIndex);
+            string selectedItem = cmdlevel.SelectedItem.ToString();
+            Rankimg.Image = (Image)Properties.Resources.ResourceManager.GetObject(selectedItem, Properties.Resources.Culture);
+        }
+
         private void txtNum1_TextChanged(object sender, EventArgs e)
         {
-            int selStart = txtNum1.SelectionStart;
-            txtNum1.Text = Regex.Replace(txtNum1.Text, "[^0-9]", "");
-            txtNum1.SelectionStart = selStart;
         }
 
         private void txtNum2_TextChanged(object sender, EventArgs e)
         {
-            int selStart = txtNum2.SelectionStart;
-            txtNum2.Text = Regex.Replace(txtNum2.Text, "[^0-9]", "");
-            txtNum2.SelectionStart = selStart;
         }
 
         ushort ParseLicensePlate(string num1, string num2)
@@ -235,11 +240,11 @@ namespace WanganGarageManager
             }
             else
             {
-                lblHP.Text = "HP: " + CarDB.power[trkPower.Value];
+                lblHP.Text = CarDB.power[trkPower.Value];
             }
         }
 
-        private void partsSwitcher_SelectedIndexChanged(object sender, EventArgs e)
+        private void PartsSwitcher_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (partsSwitcher.SelectedIndex)
             {
@@ -274,7 +279,7 @@ namespace WanganGarageManager
             colourButtons[car.wheelColour].Focus();
         }
 
-        private void btnColours_Click(object sender, EventArgs e)
+        private void BtnColours_Click(object sender, EventArgs e)
         {
             switch (partsSwitcher.SelectedIndex)
             {
@@ -301,19 +306,55 @@ namespace WanganGarageManager
             }
         }
 
-        private void lstStickers_Enter(object sender, EventArgs e)
+        private void LstStickers_Enter(object sender, EventArgs e)
         {
             colourButtons[car.stickerColour].Focus();
         }
 
-        private void frmEditor_Load(object sender, EventArgs e)
+        private void FrmEditor_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://forms.gle/gfvfYvTHxcEUyruj8");
         }
+
+        private void lblHP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabTuning_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picLicensePlate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabLicensePlate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Rankimg_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

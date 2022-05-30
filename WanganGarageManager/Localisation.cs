@@ -20,17 +20,16 @@ namespace WanganGarageManager
             string[] english = new string[] { "Select car", "Exit", "Settings", "No cars have been created.\nPerform a race in a car of your choice for it to show up here.", "Settings", "Back", "Garage view type:", "Use Power/Handling instead of HP" };
             languageTableMain.Add("en-US", english);
             //languageTableMain.Add("en-GB", english);
-            string[] japanese = new string[] { "車を選択してください", "出口", "設定", "車は作成されていません。\nここに表示されるように、選択した車でレースを実行します。", "設定", "バック", "ガレージビュータイプ：", "HPの代わりに電源/処理を使用する" };
+            string[] japanese = new string[] { "車を選択してください", "終了", "設定", "車は作成されていません。\nゲームで車を作成してください。", "設定", "戻る", "表示方法：", "馬力表記の代わりにHP表記を使用する" };
             languageTableMain.Add("ja-JP", japanese);
         }
 
         public static void InitEditor()
         {
-            string[] english = new string[] { "Car editor", "Back", "Save", "Aero", "Wing", "Rims", "Stickers", "Colour", "Trunk", "Mirrors", "Hood", "Neons", "Plate Frame", "Tuning", "License Plate", "Power", "Handling", "Tuning stage", "Change colour" };
+            string[] english = new string[] { "Car editor", "Back", "Save", "Aero", "Wing", "Rims", "Stickers", "Colour", "Trunk", "Mirrors", "Hood", "Neons", "Plate Frame", "Tuning", "License Plate", "Power", "Handling", "Tuning stage", "Change colour", "Rank" };
             languageTableEditor.Add("en-US", english);
             //languageTableEditor.Add("en-GB", english);
-            string[] japanese = new string[] { "車のエディタ", "バック", "セーブ", "エアロ", "ウイング", "リム", "ステッカー", "カラー", "トランク", "ミラー", "フード", "ネオン", "プレートフレーム", "チューニング", "ナンバープレート", "力", "取り扱い", "チューニングステージ"
-                , "色を変える" };
+            string[] japanese = new string[] { "カーエディタ", "戻る", "セーブ", "エアロ", "ウィング", "ホイール", "ステッカー", "カラー", "トランク", "ミラー", "ボンネット", "ネオン", "プレートフレーム", "チューニング", "ナンバープレート", "パワー", "ハンドリング", "チューニングステージ", "デフォルトカラー選択", "階級" };
             languageTableEditor.Add("ja-JP", japanese);
         }
 
@@ -79,6 +78,7 @@ namespace WanganGarageManager
             frm.lblHandling.Text = texts[16];
             frm.lblTuningStage.Text = texts[17];
             frm.lblChangeColour.Text = texts[18];
+            frm.tabrank.Text = texts[19];
 
             Console.WriteLine("Updated editor display language to {0}", language);
         }
